@@ -9,27 +9,17 @@ extends(src='_layout.sgr')
       a(href='/github') github
     nav
       select
-        option(value='1') 1
-        option(value='2') 2
-        option(value='3') 3
-        option(value='4') 4
-        option(value='5') 5
+        each(loop='item in [1,2,3,4,5]')
+          option(value='{{ item }}') {{ item }}
       div
-        a(href='#1' active) 1
-        a(href='#2') 2
-        a(href='#3') 3
-        a(href='#4') 4
-        a(href='#5') 5
+        each(loop='item in [1,2,3,4]')
+          a(href='#{{ item }}') {{ item }}
       div
-        a(href='#1') :1
-        a(href='#2') :2
-        a(href='#3') :3
-        a(href='#4') :4
+        each(loop='item in [1,2,3,4]')
+          a(href='#{{ item }}') :{{ item }}
       div
-        a(href='#1') 1()
-        a(href='#2') 2()
-        a(href='#3') 3()
-        a(href='#4') 4()
+        each(loop='item in [1,2,3,4]')
+          a(href='#{{ item }}') {{ item }}()
       div
         a(href='#install') install
         a(href='#options') options
@@ -41,7 +31,4 @@ extends(src='_layout.sgr')
         a(href='') spec
         a(href='') plugin
         span subtitle
-        code.
-          p {
-            color: gray(50);
-          }
+        code p { color: gray(50); }
