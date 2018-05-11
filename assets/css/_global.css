@@ -31,9 +31,10 @@ header h1 {
   margin: 0
 }
 
-@media (max-width: 480px) {
 
-  header h1 {
+
+header h1 {
+  @media (max-width: 480px) {
     font-size: 175%
   }
 }
@@ -44,9 +45,10 @@ header p {
   margin: 15px 0 0
 }
 
-@media (max-width: 480px) {
 
-  header p {
+
+header p {
+  @media (max-width: 480px) {
     font-size: 100%;
     margin: 0
   }
@@ -60,9 +62,10 @@ header nav {
   margin-top: 30px
 }
 
-@media (max-width: 920px) {
 
-  header nav {
+
+header nav {
+  @media (max-width: 920px) {
     grid-gap: 15px;
     grid-template-columns: 1fr 1fr
   }
@@ -82,9 +85,10 @@ header nav a {
   width: 180px
 }
 
-@media (max-width: 920px) {
 
-  header nav a {
+
+header nav a {
+  @media (max-width: 920px) {
     height: 120px;
     width: 120px
   }
@@ -96,9 +100,10 @@ header nav a svg {
   width: 100px
 }
 
-@media (max-width: 920px) {
 
-  header nav a svg {
+
+header nav a svg {
+  @media (max-width: 920px) {
     height: 60px;
     width: 60px
   }
@@ -127,9 +132,10 @@ body > p {
   text-align: center
 }
 
-@media (max-width: 920px) {
 
-  body > p {
+
+body > p {
+  @media (max-width: 920px) {
     margin: 20px auto
   }
 }
