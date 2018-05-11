@@ -11,6 +11,22 @@ body {
   margin: 0
 }
 
+.g-code {
+  font: 300 100%/1.5 "Roboto Mono", monospace;
+  background: #282C34;
+  border-radius: 3px;
+  padding: 16px
+}
+
+
+#social {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px
+}
+
 header {
   display: flex;
   align-items: center;
@@ -190,10 +206,19 @@ body > div > code:focus {
   }
 }
 
-#social {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0px
+#description {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10em;
+  & h3,
+  & code {
+    width: 40%;
+    justify-self: center;
+  }
+  & code {
+    color: white;
+    background: #2E2E2E;
+  }
 }
