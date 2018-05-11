@@ -1,21 +1,19 @@
 {
-  "name": "postcss-preset-env",
+  "name": "",
   "description": "",
   "version": "0.0.1",
-  "author": "wommy",
+  "author": "",
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/wommy/postcss-preset-env/issues",
+  "bugs": "https://github.com///issues",
   "dependencies": {
     "reshape-standard": "^3.0.0",
     "spike-css-standards": "^3.0.0",
     "spike-js-standards": "^2.0.2",
     "spike-optimize": "^0.1.2",
     "spike-page-id": "^1.0.0",
-    "spike": "^2.0.0",
-    "sugarml": "^0.6.0",
-    "sugarss": "^1.0.0"
+    "spike": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",
@@ -23,10 +21,10 @@
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   },
-  "homepage": "https://github.com/wommy/postcss-preset-env",
+  "homepage": "https://github.com//",
   "main": "app.js",
   "private": true,
-  "repository": "https://github.com/wommy/postcss-preset-env",
+  "repository": "https://github.com//",
   "scripts": {
     "lint": "standard | snazzy",
     "precommit": "npm run lint -s",
