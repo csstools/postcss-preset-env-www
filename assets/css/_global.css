@@ -55,9 +55,7 @@ header p {
 header nav {
   display: grid;
   grid-gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 30px
 }
@@ -71,25 +69,15 @@ header nav {
 }
 
 header nav a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, .2);
   border-radius: 5px;
   color: #ffffff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 180px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-decoration: none;
-  -webkit-transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), color 0s;
   transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), color 0s;
   width: 180px
 }
@@ -119,11 +107,9 @@ header nav a svg {
 header nav a:hover,
     header nav a:focus {
   background-color: rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
   color: #f527e0;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1)
+  transform: scale(1.1)
 }
 
 header nav a:hover svg, header nav a:focus svg {
@@ -149,15 +135,13 @@ body > p {
 }
 
 body > p > a {
-  -webkit-box-shadow: 0 1px 0 0 transparent;
-          box-shadow: 0 1px 0 0 transparent;
+  box-shadow: 0 1px 0 0 transparent;
   color: #3095ff;
   text-decoration: none
 }
 
 body > p > a:hover, body > p > a:focus {
-  -webkit-box-shadow: 0 1px 0 0;
-          box-shadow: 0 1px 0 0
+  box-shadow: 0 1px 0 0
 }
 
 body > div {
@@ -165,9 +149,7 @@ body > div {
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center
+  justify-content: center
 }
 
 body > div > code {
@@ -190,19 +172,6 @@ body > div > code:focus {
 }
 
 /* dunno if this is the right way to write this */
-
-@-webkit-keyframes rolling {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
 @keyframes rolling {
   0% {
     background-position: 0% 50%
