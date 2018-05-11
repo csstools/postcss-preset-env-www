@@ -1,4 +1,216 @@
+* {
+  box-sizing: border-box;
+  transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940)
+}
+
+html {
+  font: 300 100%/1.5 "Roboto", "Helvetica Neue", sans-serif
+}
+
 body {
-  padding: 50px;
-  font-family: system-ui;
+  margin: 0
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+  padding: 15px 15px 30px;
+  text-align: center;
+  animation: rolling 30s ease infinite;
+  background-image: linear-gradient(238deg, #9952c8, #318edf);
+  background-size: 200% 200%;
+  color: #ffffff
+}
+
+header h1 {
+  font-size: 300%;
+  font-weight: 300;
+  margin: 0
+}
+
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 175%
+  }
+}
+
+header p {
+  font-size: 150%;
+  opacity: 0.875;
+  margin: 15px 0 0
+}
+
+@media (max-width: 480px) {
+
+  header p {
+    font-size: 100%;
+    margin: 0
+  }
+}
+
+header nav {
+  display: grid;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px
+}
+
+@media (max-width: 920px) {
+
+  header nav {
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+header nav a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), color 0s;
+  transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), color 0s;
+  width: 180px
+}
+
+@media (max-width: 920px) {
+
+  header nav a {
+    height: 120px;
+    width: 120px
+  }
+}
+
+header nav a svg {
+  fill: #ffffff;
+  height: 100px;
+  width: 100px
+}
+
+@media (max-width: 920px) {
+
+  header nav a svg {
+    height: 60px;
+    width: 60px
+  }
+}
+
+header nav a:hover,
+    header nav a:focus {
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+  color: #f527e0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1)
+}
+
+header nav a:hover svg, header nav a:focus svg {
+  fill: url(#linear)
+}
+
+/* when you nest with sugarSS is it the same as using a ">"? */
+
+body > p {
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  margin: 50px auto 20px;
+  max-width: 35em;
+  padding: 0 1em;
+  text-align: center
+}
+
+@media (max-width: 920px) {
+
+  body > p {
+    margin: 20px auto
+  }
+}
+
+body > p > a {
+  -webkit-box-shadow: 0 1px 0 0 transparent;
+          box-shadow: 0 1px 0 0 transparent;
+  color: #3095ff;
+  text-decoration: none
+}
+
+body > p > a:hover, body > p > a:focus {
+  -webkit-box-shadow: 0 1px 0 0;
+          box-shadow: 0 1px 0 0
+}
+
+body > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center
+}
+
+body > div > code {
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border-width: 0;
+  color: #ffffff;
+  font: 400 100%/1.5 "Roboto Mono", monospace, monospace;
+  margin: 0 15px;
+  padding: 5px 20px
+}
+
+body > div > code > span {
+  display: inline-block
+}
+
+body > div > code:hover,
+body > div > code:focus {
+  background-color: #1e73be
+}
+
+/* dunno if this is the right way to write this */
+
+@-webkit-keyframes rolling {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes rolling {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
