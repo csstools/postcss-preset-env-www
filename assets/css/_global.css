@@ -183,3 +183,11 @@ body > div > code:focus {
     background-position: 0% 50%
   }
 }
+
+#social {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px
+}
