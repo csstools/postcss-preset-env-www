@@ -24,7 +24,10 @@ body {
   top: 0;
   right: 30px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0px
+  grid-gap: 0px;
+  @media (max-width: 920px) {
+    display: none;
+  }
 }
 
 header {
@@ -216,6 +219,9 @@ body > div > code:focus {
   & code {
     width: 40%;
     justify-self: center;
+    @media (max-width: 920px) {
+      width: 70%;
+    }
   }
   & code {
     color: white;
