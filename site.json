@@ -18,8 +18,12 @@
       "/stages": "Stages"
     }
   },
-  "messages": {
-    "heading404": "Not Found"
+  "loc": {
+    "taglineText": "Use tomorrow’s CSS today.",
+    "npmInstallHtml": "npm install <span>postcss-preset-env</span>",
+    "notFoundHeading": "Not Found",
+    "featuresHeading": "Features",
+    "landingHtml": "PostCSS Preset Env lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using <a href=\"https://cssdb.org/\">cssdb</a>."
   },
   "symbols": {
       "/features": "symbols/features.svg",

@@ -1,6 +1,6 @@
 <header class="ppe-landing-header">
-	<h1>postcss-preset-env</h1>
-	<p>Use tomorrow’s CSS today.</p>
+	<h1>${site.title}</h1>
+	<p>${site.loc.taglineText}</p>
 	<nav>
 		${Object.keys(site.links.landing).map(href => `<a href="${href}">
 			${include(util.getSymbol(href))}
@@ -8,9 +8,7 @@
 		</a>`)}
 	</nav>
 </header>
-<p>
-	PostCSS Preset Env lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using <a href="https://cssdb.org/">cssdb</a>.
-</p>
+<p>${site.loc.landingHtml}</p>
 <div>
-	<button>npm install <span>postcss-preset-env</span></button>
+	<button>${site.loc.npmInstallHtml}</button>
 </div>

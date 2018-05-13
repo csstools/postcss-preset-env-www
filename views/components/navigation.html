@@ -1,0 +1,16 @@
+<nav class="ppe-navigation">
+	<nav class="ppe-feature-menu">
+		<ul class="ppe-feature-menu-list">
+			${cssdb.filter(util.cssdbFilter).map(feature => `<li data-stage="${feature.stage}">
+				<a class="ppe-feature-menu-link" ${util.href('/features#' + feature.id, req)}>${util.titlify(feature.id, feature.title)}</a>
+			</li>`)}
+		</ul>
+	</nav>
+	<nav class="ppe-sidebar-menu">
+		<ul class="ppe-sidebar-menu-list">
+			${Object.keys(site.links.sidebar).map(href => `<li class="ppe-sidebar-menu-item">
+				<a class="ppe-sidebar-menu-link" ${util.href(href, req)}>${site.links.sidebar[href]}</a>
+			</li>`)}
+		</ul>
+	</nav>
+</nav>

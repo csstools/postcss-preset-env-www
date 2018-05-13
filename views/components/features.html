@@ -1,0 +1,12 @@
+<section class="ppe-features-list">
+	<h2 class="ppe-features-list-heading">${site.loc.featuresHeading}</h2>
+	${cssdb.filter(util.cssdbFilter).map(feature => `<section class="ppe-feature" data-stage="${feature.stage}">
+		<h3 id="${feature.id}" class="ppe-feature-heading">
+			<a class="ppe-feature-heading-link" ${util.href('/features#' + feature.id, req)}>
+				${util.titlify(feature.id, feature.title)}
+			</a>
+		</h3>
+		<p class="ppe-feature-description">${feature.description}</p>
+		<pre class="ppe-feature-example">${feature.example}</pre>
+	</section>`)}
+</section>
