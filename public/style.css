@@ -1,0 +1,72 @@
+html {
+	font: 300 100%/1.5 sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	color: rebeccapurple;
+	text-decoration: none;
+}
+
+nav > ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+[aria-current] {
+	font-weight: 700;
+}
+
+.ppe-landing-header {
+	align-items: center;
+	animation: rolling 30s ease infinite;
+	background-image: linear-gradient(238deg, #9952c8, #318edf);
+	background-size: 200% 200%;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 60vh;
+	padding: 15px 15px 30px;
+	text-align: center;
+}
+
+.ppe-landing-header nav {
+	display: grid;
+	grid-gap: 20px;
+	justify-content: center;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 30px;
+}
+
+.ppe-landing-header a {
+	align-items: center;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	color: #ffffff;
+	display: inline-flex;
+	flex-direction: column;
+	height: 180px;
+	justify-content: center;
+	text-decoration: none;
+	transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), color 0s;
+	width: 180px;
+}
+
+.ppe-landing-header svg {
+	fill: currentColor;
+	height: 100px;
+	width: 100px;
+}
+
+.ppe-heading {
+	display: flex;
+}
+
+.ppe-features {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}

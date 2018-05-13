@@ -1,0 +1,14 @@
+<section>
+	<h2>
+		Features
+	</h2>
+	${cssdb.filter(util.cssdbFilter).map(feature => `<section data-stage="${feature.stage}">
+		<h3 id="${feature.id}">
+			<a ${util.href('/features#' + feature.id, req)}>
+				${util.titlify(feature.id, feature.title)}
+			</a>
+		</h3>
+		<p>${feature.description}</p>
+		<pre>${feature.example}</pre>
+	</section>`)}
+</section>

@@ -1,0 +1,30 @@
+{
+  "title": "postcss-preset-env",
+  "links": {
+    "landing": {
+      "/features": "Features",
+      "/playground": "Try It Now",
+      "https://gitter.im/postcss": "Support",
+      "https://github.com/csstools/postcss-preset-env": "GitHub"
+    },
+    "heading": {
+      "/features": "Features",
+      "/playground": "Try It Now",
+      "https://gitter.im/postcss": "Support"
+    },
+    "sidebar": {
+      "/installation": "Installation and Usage",
+      "/options": "Options",
+      "/stages": "Stages"
+    }
+  },
+  "messages": {
+    "heading404": "Not Found"
+  },
+  "symbols": {
+      "/features": "symbols/features.svg",
+      "/playground": "symbols/playground.svg",
+      "https://gitter.im/postcss": "symbols/support.svg",
+      "https://github.com/csstools/postcss-preset-env": "symbols/github.svg"
+  }
+}

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>${site.title}</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<body>
+		${
+			req.url === '/'
+				? include("pages/landing")
+			: include(util.getURL(req.url))
+		}
+	</body>
+</html>

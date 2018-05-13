@@ -1,0 +1,16 @@
+<nav>
+	<nav id="feature-nav">
+		<ul>
+			${cssdb.filter(util.cssdbFilter).map(feature => `<li data-stage="${feature.stage}">
+				<a ${util.href('/features#' + feature.id, req)}>${util.titlify(feature.id, feature.title)}</a>
+			</li>`)}
+		</ul>
+	</nav>
+	<nav>
+		<ul>
+			${Object.keys(site.links.sidebar).map(href => `<li>
+				<a ${util.href(href, req)}>${site.links.sidebar[href]}</a>
+			</li>`)}
+		</ul>
+	</nav>
+</nav>

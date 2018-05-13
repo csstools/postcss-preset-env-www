@@ -1,0 +1,32 @@
+{
+  "name": "postcss-preset-env-www",
+  "version": "1.0.0",
+  "description": "The official website for PostCSS Preset Env",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "csstools/postcss-preset-env-www",
+  "homepage": "https://github.com/csstools/postcss-preset-env-www#readme",
+  "bugs": "https://github.com/csstools/postcss-preset-env-www/issues",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "pretest": "rollup -c .rollup.js --silent",
+    "start": "node ./index.js",
+    "test": "echo 'Running tests...'; npm run test:js",
+    "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cssdb": "^3.1.0",
+    "eslit": "^5.0.0",
+    "express": "^4.16.3"
+  },
+  "eslintConfig": {
+    "extends": "dev",
+    "parser": "babel-eslint"
+  },
+  "keywords": []
+}

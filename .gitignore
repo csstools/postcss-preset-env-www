@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+*.log*
+.*
+!.appveyor.yml
+!.editorconfig
+!.gitignore
+!.rollup.js
+!.travis.yml
