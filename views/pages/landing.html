@@ -1,14 +1,14 @@
 <header class="ppe-landing-header">
-	<h1>${site.title}</h1>
-	<p>${site.loc.taglineText}</p>
-	<nav>
-		${Object.keys(site.links.landing).map(href => `<a href="${href}">
+	<h1 class="ppe-landing-title">${site.title}</h1>
+	<p class="ppe-landing-tag">${site.loc.taglineText}</p>
+	<nav class="ppe-landing-menu">
+		${Object.keys(site.links.landing).map(href => `<a class="ppe-landing-menu-link" ${util.href(href, req)}>
 			${include(util.getSymbol(href))}
 			<span>${site.links.landing[href]}</span>
 		</a>`)}
 	</nav>
 </header>
-<p>${site.loc.landingHtml}</p>
-<div>
-	<button>${site.loc.npmInstallHtml}</button>
-</div>
+<main>
+	<p class="ppe-landing-content">${site.loc.landingHtml}</p>
+	<p class="ppe-landing-action"><button class="ppe-landing-button">${site.loc.npmInstallHtml}</button></p>
+</main>

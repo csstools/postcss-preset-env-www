@@ -14,7 +14,7 @@ function onHashChange() {
 		element.removeAttribute('aria-current');
 	});
 
-	const selector = `a[href="${location.pathname}${location.hash}"]`;
+	const selector = `.ppe-features a[href="${location.pathname}${location.hash}"]`;
 
 	hashElements.splice(
 		0,
@@ -30,7 +30,7 @@ function onHashChange() {
 }
 
 function initFeatureNav() {
-	const nav = document.getElementById('feature-nav');
+	const nav = document.querySelector('.ppe-navigation');
 
 	if (nav) {
 		const select = document.createElement('select');

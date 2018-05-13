@@ -1,0 +1,45 @@
+.ppe-heading {
+	align-items: center;
+	background-color: #1874d5;
+	background-image: linear-gradient(90deg, #9952c8, #1874d5);
+	color: #ffffff;
+	display: flex;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.ppe-heading-title {
+	font-size: 26px;
+	font-weight: inherit;
+	letter-spacing: -0.02em;
+	margin: 0;
+	padding: 0 40px;
+}
+
+.ppe-heading-menu-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.ppe-heading-menu-link {
+	align-items: center;
+	color: inherit;
+	display: flex;
+	padding: 20px 25px;
+}
+
+.ppe-heading-menu-link[aria-current="page"] {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.ppe-heading-menu-link svg {
+	display: block;
+	fill: currentColor;
+	height: 40px;
+	margin-right: 20px;
+	width: 40px;
+}

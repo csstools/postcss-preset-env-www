@@ -1,0 +1,89 @@
+.ppe-landing-header {
+	align-items: center;
+	animation: rolling 30s ease infinite;
+	background-image: linear-gradient(238deg, #9952c8, #318edf);
+	background-size: 200% 200%;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 60vh;
+	padding: 15px 15px 30px;
+	text-align: center;
+}
+
+.ppe-landing-title {
+	font-size: 300%;
+	font-weight: 300;
+	margin: 0;
+}
+
+.ppe-landing-tag {
+	font-size: 150%;
+	opacity: 0.875;
+	margin: 15px 0 0;
+}
+
+.ppe-landing-menu {
+	display: grid;
+	grid-gap: 20px;
+	justify-content: center;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 30px;
+}
+
+.ppe-landing-menu-link {
+	align-items: center;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	color: #ffffff;
+	display: inline-flex;
+	flex-direction: column;
+	height: 180px;
+	justify-content: center;
+	text-decoration: none;
+	transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), color 0s;
+	width: 180px;
+}
+
+.ppe-landing-menu-link:hover, .ppe-landing-menu-link:focus {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+	color: #f527e0;
+	transform: scale(1.1);
+}
+
+.ppe-landing-menu-link svg {
+	fill: currentColor;
+	height: 100px;
+	width: 100px;
+}
+
+.ppe-landing-menu-link:hover svg {
+	fill: url(#linear);
+}
+
+.ppe-landing-content {
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	margin: 50px auto 20px;
+	max-width: 35em;
+	padding: 0 1em;
+	text-align: center;
+}
+
+.ppe-landing-action {
+	display: flex;
+	justify-content: center;
+	margin: 0 15px 20px;
+}
+
+.ppe-landing-button {
+	background-color: #2e2e2e;
+	border-radius: 5px;
+	border-width: 0;
+	color: #ffffff;
+	font: 400 100%/1.5 "Roboto Mono", monospace, monospace;
+	margin: 0;
+	padding: 5px 20px;
+}

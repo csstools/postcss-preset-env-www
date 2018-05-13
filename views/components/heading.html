@@ -3,7 +3,10 @@
 	<nav class="ppe-heading-menu">
 		<ul class="ppe-heading-menu-list">
 			${Object.keys(site.links.heading).map(href => `<li class="ppe-heading-menu-item">
-				<a class="ppe-heading-menu-link" ${util.href(href, req)}>${site.links.heading[href]}</a>
+				<a class="ppe-heading-menu-link" ${util.href(href, req)}>
+					${include(util.getSymbol(href))}
+					<span>${site.links.heading[href]}</span>
+				</a>
 			</li>`)}
 		</ul>
 	</nav>
