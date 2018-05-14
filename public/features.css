@@ -50,7 +50,11 @@
 .ppe-features-list {
 	flex-grow: 1;
 	margin-left: 300px;
-	padding: 0 75px 50px;
+	padding: 0 75px calc(var(--heading-size) * 1.25 + 50px);
+}
+
+.ppe-feature {
+	margin: 0 0 calc(var(--heading-size) * -1.25);
 }
 
 .ppe-feature-heading {
@@ -58,6 +62,21 @@
 	font-size: 32px;
 	font-weight: inherit;
 	letter-spacing: -0.02em;
-	margin: 0;
 	padding: calc(var(--heading-size) + 50px) 0 0;
+}
+
+.ppe-feature-heading-link {
+	color: inherit;
+}
+
+.ppe-feature-heading:target, .ppe-feature-heading a:hover, .ppe-feature-heading a:focus {
+	color: #3095ff;
+}
+
+.ppe-feature-example {
+	background-color: #282c34;
+	border-radius: 3px;
+	color: #abb2bf;
+	font: 400 100%/1.5 "Roboto Mono", monospace, monospace;
+	padding: 15px 30px;
 }

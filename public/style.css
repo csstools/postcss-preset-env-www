@@ -6,7 +6,7 @@
 
 * {
 	box-sizing: border-box;
-	transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940), font-weight 0s;
 }
 
 :root {
@@ -30,5 +30,5 @@ nav ul {
 }
 
 [aria-current] {
-	font-weight: 700;
+	font-weight: 400;
 }
