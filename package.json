@@ -7,11 +7,11 @@
   "repository": "csstools/postcss-preset-env-www",
   "homepage": "https://github.com/csstools/postcss-preset-env-www#readme",
   "bugs": "https://github.com/csstools/postcss-preset-env-www/issues",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "prepublishOnly": "npm test",
     "pretest": "rollup -c .rollup.js --silent",
-    "start": "node ./index.js",
+    "start": "node app --dev",
     "test": "echo 'Running tests...'; npm run test:js",
     "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet"
   },

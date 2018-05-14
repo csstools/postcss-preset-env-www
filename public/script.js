@@ -35,6 +35,8 @@ function initFeatureNav() {
 	if (nav) {
 		const select = document.createElement('select');
 
+		select.className = 'ppe-navigation-select';
+
 		stages.forEach(stage => {
 			const option = select.appendChild(document.createElement('option'));
 

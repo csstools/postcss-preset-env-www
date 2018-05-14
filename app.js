@@ -5,6 +5,8 @@ const site = require('./site.json');
 const util = require('./util.js');
 
 const app = express();
+const isDev = process.argv.includes('--dev');
+const port = isDev ? 8080 : 80;
 
 app.engine('html', (filePath, locals = {}, cb) => {
 	eslit(filePath, locals)
@@ -23,4 +25,4 @@ app.get('*', (req, res) => {
 	res.render('index.html', { cssdb, req, site, util });
 });
 
-app.listen(3000, () => console.log('http://localhost:3000/'));
+app.listen(port);

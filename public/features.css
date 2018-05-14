@@ -17,17 +17,34 @@
 	width: 300px;
 }
 
-.obscure-overflow-y:hover {
+.ppe-navigation:hover {
   overflow-y: auto;
   overflow-y: overlay;
 }
 
 @media (hover: none) {
-  .obscure-overflow-y {
+  .ppe-navigation {
     overflow-y: auto;
     overflow-y: overlay;
   }
 }
+
+.ppe-navigation-select {
+	display: block;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+.ppe-feature-menu-link {
+	color: #777777;
+	display: block;
+	font-style: normal;
+	font-size: 14px;
+	padding: 5px 0;
+}
+
+.ppe-feature-menu-link:hover, .ppe-feature-menu-link:focus, .ppe-feature-menu-link[aria-current] {
+	color: #000000;
 }
 
 .ppe-features-list {
