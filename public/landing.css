@@ -72,6 +72,16 @@
 	text-align: center;
 }
 
+.ppe-landing-content a {
+	box-shadow: 0 1px 0 0 transparent;
+	color: #3095ff;
+	text-decoration: none;
+}
+
+.ppe-landing-content a:hover, .ppe-landing-content a:focus {
+	box-shadow: 0 1px 0 0;
+}
+
 .ppe-landing-action {
 	display: flex;
 	justify-content: center;
@@ -86,4 +96,10 @@
 	font: 400 100%/1.5 "Roboto Mono", monospace, monospace;
 	margin: 0;
 	padding: 5px 20px;
+}
+
+@keyframes rolling {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
 }

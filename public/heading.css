@@ -19,6 +19,10 @@
 	padding: 0 40px;
 }
 
+.ppe-heading-title-link {
+	color: inherit;
+}
+
 .ppe-heading-menu-list {
 	display: flex;
 	margin: 0;

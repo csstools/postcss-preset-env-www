@@ -1,5 +1,7 @@
 <heading class="ppe-heading">
-	<h1 class="ppe-heading-title">${site.title}</h1>
+	<h1 class="ppe-heading-title">
+		<a class="ppe-heading-title-link" href="/">${site.title}</a>
+	</h1>
 	<nav class="ppe-heading-menu">
 		<ul class="ppe-heading-menu-list">
 			${Object.keys(site.links.heading).map(href => `<li class="ppe-heading-menu-item">
