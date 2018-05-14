@@ -29,9 +29,14 @@ const symbolsByHREF = {
 	'https://github.com/csstools/postcss-preset-env': 'symbols/github.svg'
 };
 
+const stageColors = ['#414141', '#ed782a', '#899c1f', '#3e7817', '#005a9c'];
+
 module.exports = {
 	cssdbFilter(feature) {
 		return !omissions.includes(feature.id);
+	},
+	getStageColor(stage) {
+		return stageColors[stage];
 	},
 	getSymbol(href) {
 		return `../${symbolsByHREF[href]}`;

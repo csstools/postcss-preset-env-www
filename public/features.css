@@ -78,11 +78,32 @@
 	letter-spacing: 0.08em;
 	margin-left: 10px;
 	padding: 5px 10px;
+	text-transform: uppercase;
 }
 
 .ppe-feature-heading-stage {
 	background-color: #d6b82f;
 	color: #ffffff;
+}
+
+.ppe-feature-heading-stage[data-stage="0"] {
+	background-color: #414141;
+}
+
+.ppe-feature-heading-stage[data-stage="1"] {
+	background-color: #ed782a;
+}
+
+.ppe-feature-heading-stage[data-stage="2"] {
+	background-color: #899c1f;
+}
+
+.ppe-feature-heading-stage[data-stage="3"] {
+	background-color: #3e7817;
+}
+
+.ppe-feature-heading-stage[data-stage="4"] {
+	background-color: #005a9c;
 }
 
 .ppe-feature-heading-specLink, .ppe-feature-heading-pluginLink {
