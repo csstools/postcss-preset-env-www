@@ -1,5 +1,5 @@
 <section class="ppe-features-list">
-	<h2 class="ppe-features-list-heading">${site.loc.featuresHeading}</h2>
+	<h2 class="ppe-features-list-heading" hidden>${site.loc.featuresHeading}</h2>
 	${cssdb.filter(util.cssdbFilter).map(feature => `<section class="ppe-feature" data-stage="${feature.stage}">
 		<h3 id="${feature.id}" class="ppe-feature-heading">
 			<a class="ppe-feature-heading-link" ${util.href('/features#' + feature.id, req)}>
