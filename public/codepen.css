@@ -8,3 +8,11 @@
 	top: var(--heading-size);
 	width: 100%;
 }
+
+.css-atrule-name {
+	color: #c678dd;
+}
+
+.css-value {
+	color: #56b6c2;
+}

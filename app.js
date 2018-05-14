@@ -1,6 +1,7 @@
 const cssdb = require('cssdb');
 const eslit = require('eslit');
 const express = require('express');
+const postcss = require('postcss');
 const site = require('./site.json');
 const util = require('./util.js');
 
@@ -20,6 +21,12 @@ app.set('views', './views');
 app.set('view engine', 'html');
 
 app.use(express.static('public'));
+
+cssdb.forEach(feature => {
+	feature.example = postcss().process(feature.example, {
+		stringifier: util.postcssToHtml
+	}).css
+})
 
 app.get('*', (req, res) => {
 	res.render('index.html', { cssdb, req, site, util });
