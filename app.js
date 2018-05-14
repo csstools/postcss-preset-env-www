@@ -15,7 +15,7 @@ app.engine('html', (filePath, locals = {}, cb) => {
 		out => cb(null, out),
 		cb
 	)
-})
+});
 
 app.set('views', './views');
 app.set('view engine', 'html');
