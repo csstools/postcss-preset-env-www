@@ -1,7 +1,8 @@
 .ppe-landing-header {
 	align-items: center;
-	background-image: linear-gradient(238deg, #1874D5, #9952C8);
-	background-size: 100% 100%;
+	animation: rolling 30s ease infinite;
+	background-image: linear-gradient(238deg, #9952C8, #1874D5);
+	background-size: 300% 300%;
 	color: #ffffff;
 	display: flex;
 	flex-direction: column;
