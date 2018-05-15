@@ -109,6 +109,8 @@ function scrollTo(target, duration, easing, callback) {
 		if (window.pageYOffset !== targetOffsetToScroll) {
 			requestAnimationFrame(scroll);
 		} else {
+			window.scroll(0, start);
+
 			callback();
 		}
 	}
