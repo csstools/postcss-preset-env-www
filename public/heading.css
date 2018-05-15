@@ -13,14 +13,10 @@
 
 .ppe-heading-title {
 	font-size: 26px;
-	font-weight: inherit;
+	font-weight: 400;
 	letter-spacing: -0.02em;
 	margin: 0;
 	padding: 0 40px;
-}
-
-.ppe-heading-title-link {
-	color: inherit;
 }
 
 .ppe-heading-menu-list {
@@ -31,7 +27,6 @@
 
 .ppe-heading-menu-link {
 	align-items: center;
-	color: inherit;
 	display: flex;
 	padding: 20px 25px;
 }

@@ -66,7 +66,7 @@
 .ppe-feature-title {
 	color: #3c3c3c;
 	font-size: 32px;
-	font-weight: inherit;
+	font-weight: 500;
 	letter-spacing: -0.02em;
 	margin: 0 auto 0 0;
 }
@@ -111,19 +111,17 @@
 	color: #828282;
 }
 
-.ppe-feature-title-link {
-	font-weight: 400;
-	color: inherit;
+.ppe-feature-heading:target, .ppe-feature-heading a:hover, .ppe-feature-heading a:focus {
+	color: #3095ff;
 }
 
-.ppe-feature-title:target, .ppe-feature-title a:hover, .ppe-feature-title a:focus {
-	color: #3095ff;
+.ppe-feature-description {
+	font-weight: 300;
 }
 
 .ppe-feature-example {
 	background-color: #282c34;
 	border-radius: 3px;
 	color: #abb2bf;
-	font: 400 100%/1.5 "Roboto Mono", monospace, monospace;
 	padding: 15px 30px;
 }
