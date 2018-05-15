@@ -54,7 +54,7 @@
 }
 
 .ppe-feature {
-	margin: 0 0 calc(var(--heading-size) * -1.25);
+	margin: 0 0 calc(var(--heading-size) * -1);
 }
 
 .ppe-feature-heading {
