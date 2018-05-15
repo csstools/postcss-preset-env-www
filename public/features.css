@@ -122,7 +122,7 @@
 .ppe-feature-example {
 	background-color: #282c34;
 	border-radius: 3px;
-	color: #c594c5;
+	color: #cdd3de;
 	padding: 15px 30px;
 }
 
@@ -130,8 +130,8 @@
 	color: #f99157;
 }
 
-.css-selector {
-	color: #cdd3de;
+.css-atrule-params, .css-selector {
+	color: #c594c5;
 }
 
 .css-comment {
@@ -140,4 +140,20 @@
 
 .css-property {
 	color: #99c794;
+}
+
+.css-value {
+	color: #c594c5;
+}
+
+.css-var {
+	color: #e06c75;
+}
+
+.css-function {
+	color: #6699cc;
+}
+
+.css-string {
+	color: #fac863;
 }
