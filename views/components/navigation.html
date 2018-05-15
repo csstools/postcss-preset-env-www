@@ -1,15 +1,15 @@
 <nav class="ppe-navigation">
-	<nav class="ppe-feature-menu">
+	<nav class="ppe-feature-menu" aria-label="${site.loc.featureMenuText}">
 		<ul class="ppe-feature-menu-list">
-			${cssdb.filter(util.cssdbFilter).map(feature => `<li class="ppe-feature-menu-item" data-stage="${feature.stage}">
-				<a class="ppe-feature-menu-link" ${util.href('/features#' + feature.id, req)}>${util.titlify(feature.id, feature.title)}</a>
+			${cssdb.filter(util.cssdbFilter).map(feature => `<li class="ppe-menu-item" data-stage="${feature.stage}">
+				<a class="ppe-menu-link" ${util.href('/features#' + feature.id, req)}>${util.titlify(feature.id, feature.title)}</a>
 			</li>`)}
 		</ul>
 	</nav>
-	<nav class="ppe-sidebar-menu">
+	<nav class="ppe-sidebar-menu" aria-label="${site.loc.sidebarMenuText}">
 		<ul class="ppe-sidebar-menu-list">
-			${Object.keys(site.links.sidebar).map(href => `<li class="ppe-sidebar-menu-item">
-				<a class="ppe-sidebar-menu-link" ${util.href(href, req)}>${site.links.sidebar[href]}</a>
+			${Object.keys(site.links.sidebar).map(href => `<li class="ppe-menu-item">
+				<a class="ppe-menu-link" ${util.href(href, req)}>${site.links.sidebar[href]}</a>
 			</li>`)}
 		</ul>
 	</nav>

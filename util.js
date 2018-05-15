@@ -31,6 +31,8 @@ const symbolsByHREF = {
 
 const stageColors = ['#414141', '#ed782a', '#899c1f', '#3e7817', '#005a9c'];
 
+const validPages = ['/features', '/playground'];
+
 module.exports = {
 	cssdbFilter(feature) {
 		return !omissions.includes(feature.id);
@@ -42,7 +44,11 @@ module.exports = {
 		return `../${symbolsByHREF[href]}`;
 	},
 	getURL(href) {
-		return `pages${href}`;
+		if (validPages.includes(href)) {
+			return `pages${href}`;
+		} else {
+			return 'pages/404';
+		}
 	},
 	href(href, req) {
 		return `href="${href}"${

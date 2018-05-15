@@ -13,17 +13,22 @@
       "https://gitter.im/postcss": "Support"
     },
     "sidebar": {
-      "/installation": "Installation and Usage",
-      "/options": "Options",
-      "/stages": "Stages"
+      "https://github.com/csstools/postcss-preset-env#usage": "Installation and Usage",
+      "https://github.com/csstools/postcss-preset-env#options": "Options",
+      "https://cssdb.org/#staging-process": "Stages"
     }
   },
   "loc": {
+    "codepenTitle": "PostCSS Preset Env demo",
     "taglineText": "Use tomorrow’s CSS today.",
     "npmInstallHtml": "npm install <span>postcss-preset-env</span>",
     "notFoundHeading": "Not Found",
+    "featureMenuText": "Feature Navigation",
     "featuresHeading": "Features",
-    "landingHtml": "PostCSS Preset Env lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using <a href=\"https://cssdb.org/\">cssdb</a>."
+    "landingHtml": "PostCSS Preset Env lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using <a href=\"https://cssdb.org/\">cssdb</a>.",
+    "pluginText": "Plugin",
+    "sidebarMenuText": "Additional Navigation",
+    "specificationText": "Specification"
   },
   "symbols": {
       "/features": "symbols/features.svg",

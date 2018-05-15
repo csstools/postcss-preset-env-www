@@ -7,9 +7,9 @@
 					${util.titlify(feature.id, feature.title)}
 				</a>
 			</h3>
-			<span class="ppe-feature-heading-stage" data-stage="${feature.stage}">Stage ${feature.stage}</span>
-			<a class="ppe-feature-heading-specLink" ${util.href(feature.specification, req)}>Specification</a>
-			<a class="ppe-feature-heading-pluginLink" ${util.href(feature.polyfills.slice(-1)[0].link, req)}>Plugin</a>
+			<a class="ppe-feature-heading-stage" data-stage="${feature.stage}" ${util.href('/features#' + feature.id, req)}>Stage ${feature.stage}</a>
+			<a class="ppe-feature-heading-specLink" ${util.href(feature.specification, req)}>${site.loc.specificationText}</a>
+			<a class="ppe-feature-heading-pluginLink" ${util.href(feature.polyfills.slice(-1)[0].link, req)}>${site.loc.pluginText}</a>
 		</header>
 		<p class="ppe-feature-description">${feature.description}</p>
 		<pre class="ppe-feature-example">${feature.example}</pre>
