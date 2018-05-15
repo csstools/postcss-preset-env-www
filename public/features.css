@@ -36,7 +36,7 @@
 }
 
 .ppe-feature-menu-link {
-	color: #777777;
+	color: #727272;
 	display: block;
 	font-style: normal;
 	font-size: 14px;
@@ -74,7 +74,7 @@
 .ppe-feature-heading-stage, .ppe-feature-heading-specLink, .ppe-feature-heading-pluginLink {
 	border-radius: 2px;
 	font-size: 10px;
-	font-weight: 400;
+	font-weight: 600;
 	letter-spacing: 0.08em;
 	margin-left: 10px;
 	padding: 5px 10px;
@@ -82,7 +82,6 @@
 }
 
 .ppe-feature-heading-stage {
-	background-color: #d6b82f;
 	color: #ffffff;
 }
 
@@ -108,7 +107,7 @@
 
 .ppe-feature-heading-specLink, .ppe-feature-heading-pluginLink {
 	background-color: #eeeeee;
-	color: #828282;
+	color: #6c6c6c;
 }
 
 .ppe-feature-heading:target, .ppe-feature-heading a:hover, .ppe-feature-heading a:focus {
