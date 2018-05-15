@@ -111,6 +111,12 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+@media (max-width: 859px) {
+	:root {
+		--heading-size: 40px;
+	}
+}
+
 body {
 	margin: 0;
 }
