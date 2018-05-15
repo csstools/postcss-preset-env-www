@@ -98,7 +98,7 @@
 	border-radius: 5px;
 	border-width: 0;
 	color: #ffffff;
-	font: 400 100%/1.5 "Roboto Mono", monospace, monospace;
+	font: 400 100%/1.5 var(--font-code);
 	margin: 12px 0 30px;
 	padding: 10px 20px;
 }

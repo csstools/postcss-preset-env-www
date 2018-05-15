@@ -122,6 +122,22 @@
 .ppe-feature-example {
 	background-color: #282c34;
 	border-radius: 3px;
-	color: #abb2bf;
+	color: #c594c5;
 	padding: 15px 30px;
+}
+
+.css-atrule-name {
+	color: #f99157;
+}
+
+.css-selector {
+	color: #cdd3de;
+}
+
+.css-comment {
+	color: #65737e;
+}
+
+.css-property {
+	color: #99c794;
 }
