@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400");
 @import url("./landing.css");
 @import url("./heading.css");
 @import url("./codepen.css");
@@ -11,7 +11,7 @@
 
 :root {
 	--heading-size: 80px;
-	font: 300 100%/1.5 system-ui, sans-serif;
+	font: 300 100%/1.5 "Roboto", sans-serif;
 }
 
 body {
