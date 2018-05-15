@@ -109,12 +109,26 @@
 	padding: calc(var(--heading-size) + 50px) 0 0;
 }
 
+@media (max-width: 959px) {
+	.ppe-feature-heading {
+		flex-wrap: wrap;
+	}
+}
+
 .ppe-feature-title {
 	color: #3c3c3c;
 	font-size: 32px;
 	font-weight: 500;
 	letter-spacing: -0.02em;
+	line-height: 1.25;
 	margin: 0 auto 0 0;
+}
+
+@media (max-width: 959px) {
+	.ppe-feature-title {
+		flex-basis: 100%;
+		margin-bottom: 10px;
+	}
 }
 
 .ppe-feature-heading-stage, .ppe-feature-heading-specLink, .ppe-feature-heading-pluginLink {
@@ -125,6 +139,12 @@
 	margin-left: 10px;
 	padding: 5px 10px;
 	text-transform: uppercase;
+}
+
+@media (max-width: 959px) {
+	.ppe-feature-heading-stage {
+		margin-left: 0;
+	}
 }
 
 .ppe-feature-heading-stage {
