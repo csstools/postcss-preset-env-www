@@ -20,8 +20,11 @@
   },
   "loc": {
     "codepenTitle": "PostCSS Preset Env demo",
+    "copyToClipboardText": "Copy to clipboard",
     "taglineText": "Use tomorrow’s CSS today.",
     "npmInstallHtml": "npm install <span>postcss-preset-env</span>",
+    "npmInstallText": "npm install postcss-preset-env",
+    "npmInstallPromptText": "Install this repository using",
     "notFoundHeading": "Not Found",
     "featureMenuText": "Feature Navigation",
     "featuresHeading": "Features",

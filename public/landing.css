@@ -1,7 +1,7 @@
 .ppe-landing-header {
 	align-items: center;
 	animation: rolling 30s ease infinite;
-	background-image: linear-gradient(238deg, #9952C8, #1874D5);
+	background-image: linear-gradient(238deg, #9952c8, #1874d5);
 	background-size: 300% 300%;
 	color: #ffffff;
 	display: flex;
@@ -73,6 +73,7 @@
 }
 
 .ppe-landing-menu-link:hover, .ppe-landing-menu-link:focus {
+	background-color: black;
 	background-color: rgba(255,255,255,1);
 	box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
 	color: #f527e0;
@@ -105,7 +106,7 @@
 
 .ppe-landing-content a {
 	box-shadow: 0 1px 0 0 transparent;
-	color: #3095FF;
+	color: #0078d6;
 	text-decoration: none;
 }
 
@@ -119,19 +120,49 @@
 	margin: 0 15px 20px;
 }
 
-.ppe-landing-button {
+.ppe-landing-clipboard {
 	background-color: #2e2e2e;
 	border-radius: 5px;
 	border-width: 0;
+	align-items: center;
 	color: #ffffff;
+	display: flex;
 	font: 400 100%/1.5 var(--font-code);
 	margin: 12px 0 30px;
 	padding: 10px 20px;
 	text-align: center;
 }
 
-.ppe-landing-button span {
+.ppe-landing-clipboard span {
 	display: inline-block;
+}
+
+.ppe-landing-clipboard-action {
+	fill: currentColor;
+}
+
+.ppe-landing-clipboard-button {
+	appearance: none;
+	background-color: transparent;
+	border-width: 0;
+	color: inherit;
+	display: block;
+	font: inherit;
+	height: 20px;
+	line-height: inherit;
+	margin: 0 0 0 4px;
+	padding: 2px;
+	width: 20px;
+}
+
+.ppe-landing-clipboard-text span {
+	display: inline-block;
+}
+
+.ppe-landing-clipboard-action {
+	display: block;
+	height: 16px;
+	width: 16px;
 }
 
 @keyframes rolling {

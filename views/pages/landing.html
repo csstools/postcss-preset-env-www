@@ -10,5 +10,9 @@
 </header>
 <main>
 	<p class="ppe-landing-content">${site.loc.landingHtml}</p>
-	<p class="ppe-landing-action"><span class="ppe-landing-button">${site.loc.npmInstallHtml}</span></p>
+	<p class="ppe-landing-action" aria-label="${site.loc.npmInstallPromptText} ${site.loc.npmInstallText}">
+		<span class="ppe-landing-clipboard">
+			<span class="ppe-landing-clipboard-text" id="clipboard" data-clipboard>${site.loc.npmInstallHtml}</span>
+		</span>
+	</p>
 </main>
