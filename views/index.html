@@ -17,8 +17,10 @@
 <link href="/main.css" rel="stylesheet prefetch">
 <script src="/script.js"></script>
 
+
 <body>
 	${ req.url === '/' ? include("pages/landing") : include(util.getURL(req.url)) }
 </body>
+
 
 </html>
