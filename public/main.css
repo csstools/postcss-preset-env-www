@@ -22,20 +22,21 @@ body {
 	min-height: 500px;
 	box-sizing: border-box;
 	padding: 1em;
-	max-height: 720px;
+	height: auto;
 	display: -webkit-box;
 	background: var(--spacepurple);
 }
 
-.example__block {
+.code {
 	border-radius: 5px;
 	font-size: 13px;
 	display: block;
-	width: 400px;
+	max-width: 400px;
 	height: auto;
+	width: 100%;
 }
 
-.code__examples {
+.hero__content {
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -88,12 +89,18 @@ body {
 }
 
 .nav__link {
-	color: #fff;
+	color: #e1f5ff;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 13px;
 	margin-left: 20px;
 	font-weight: 200;
+	transition: 0.22s ease-in-out;
+}
+
+.nav__link:hover {
+	transition: 0.22s ease-in-out;
+	color: #a5b8ff;
 }
 
 .npminstall {
@@ -103,7 +110,7 @@ body {
 	background: var(--spacepurple);
 	width: 300px;
 	box-sizing: border-box;
-	padding: 5px;
+	padding: 10px;
 	line-height: 1.5;
 	border-radius: 5px;
 }
@@ -159,7 +166,7 @@ body {
 }
 
 .section__title {
-	color: var(--lightpurple);
+	color: var(--spacepurple);
 	font-size: 2em;
 	font-family: ibmbold;
 	letter-spacing: -1px;
@@ -182,6 +189,12 @@ body {
 	text-decoration: none;
 }
 
+.link__default:hover {
+	transition: 0.22s ease-in-out;
+	color: var(--lightpurple);
+	border-bottom: 1px solid rgba(156, 156, 234, 0.4);
+}
+
 .interactive__wrapper {
 	height: 30px;
 
@@ -195,22 +208,13 @@ body {
 ul {
 	margin: 0;
 	padding: 0;
-	animation: scrollUp 10s 0.22s forwards;
+	animation: scrollUp 6s 0.22s forwards ease-in-out;
 }
 ul li {
 	opacity: 1;
 	height: 35px;
 	padding: 10px;
 	list-style: none;
-}
-
-@keyframes fadeOut {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
 }
 @keyframes scrollUp {
 	from {
@@ -326,5 +330,10 @@ ul li {
 	}
 	.section__wrapper {
 		flex-direction: column;
+	}
+
+	.hero__content {
+		align-items: center;
+		flex-flow: column;
 	}
 }
