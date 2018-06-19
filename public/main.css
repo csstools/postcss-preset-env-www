@@ -117,8 +117,8 @@ body {
 }
 
 .subhero {
-	background: #f9f9ff;
-	height: 50vh;
+	background: #3d3d55;
+	height: auto;
 	width: 100%;
 	display: flex;
 }
@@ -167,13 +167,22 @@ body {
 }
 
 .section__title {
-	color: var(--spacepurple);
+
 	font-size: 2em;
 	font-family: ibmbold;
 	letter-spacing: -1px;
 	line-height: 1.3333333;
 }
 
+
+.section__title-default{
+	color: var(--spacepurple);
+}
+
+
+.section__title-subheader{
+	color: #fff;
+}
 .section__text {
 	padding-top: 10px;
 	color: #8d8dad;
