@@ -103,6 +103,10 @@ body {
 	color: #a5b8ff;
 }
 
+
+.ppe-relative{
+	position: relative !important;
+}
 .npminstall {
 	color: #fff;
 	font-size: 13px;
@@ -215,12 +219,17 @@ body {
 	position: relative;
 }
 
-ul {
+.scrollingList {
 	margin: 0;
 	padding: 0;
 	animation: scrollUp 6s 0.22s forwards ease-in-out;
 }
-ul li {
+
+
+.ppe-heading-menu-item{
+	color:#fff;
+}
+.scrollingList .item {
 	opacity: 1;
 	height: 35px;
 	padding: 10px;
