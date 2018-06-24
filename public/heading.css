@@ -5,10 +5,16 @@
 	color: #ffffff;
 	display: flex;
 	left: 0;
+	transition: .22s ease-in-out;
 	position: fixed;
 	right: 0;
 	top: 0;
 	z-index: 1;
+}
+
+.ppe-heading-small{
+	transition: .22s ease-in-out;
+	height: 100px;
 }
 
 .ppe-heading-title {
