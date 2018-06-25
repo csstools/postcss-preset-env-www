@@ -1,5 +1,19 @@
-${include('../components/heading')}	
-
+<heading class="ppe-heading heading-not-fixed">
+	<h1 class="ppe-heading-title">
+		<a class="ppe-heading-title-link" href="/">${site.title}</a>
+	</h1>
+	<nav class="ppe-heading-menu">
+		<ul class="ppe-heading-menu-list">
+			${Object.keys(site.links.heading).map(href => `<li class="ppe-heading-menu-item">
+				<a class="ppe-heading-menu-link" ${util.href(href, req)}>
+					${include(util.getSymbol(href))}
+					<span>${site.links.heading[href]}</span>
+				</a>
+			</li>`)}
+		</ul>
+	</nav>
+</heading>
+<main>
 <div class="hero">
 	<div class="hero__wrapper">
 		<div class="hero__title">
@@ -95,27 +109,56 @@ h1, h2, h3, h4, h5, h6 {
 				Getting started
 				<br>
 			</span>
+			<div class="switcher__container">
+					<div class="switcher switcher-active">
+						Gulp
+					</div>
+
+					<div class="switcher">
+						Webpack
+					</div>
+					<div class="switcher">
+						Grunt
+					</div>
+
+					<div class="switcher">
+						CLI
+					</div>
+			</div>
 			<span class="section__text">
 
 				<p class="subhero__content">
-					To get started install postcss-preset-env package via npm
+					Add Gulp PostCSS to your build tool:
 
-					<div class="npminstall">npm install postcss-preset-env --save-dev</div>
+					<div class="npminstall">npm install gulp-postcss --save-dev</div>
 
 
 					<span class="subheader">
-						Then connect postcss-process-env directly to your's PostCSS config
+						Use PostCSS Preset Env in your Gulpfile:
 					</span>
 					<div class="npminstall">
+<pre>
+import postcss from 'gulp-postcss';
+import postcssPresetEnv from 'postcss-preset-env';
 
-						import postcss from 'gulp-postcss';
-import postcssPresetEnv from 'postcss-preset-env';<br>
- <br>
-postcss([<br>
-  postcssPresetEnv(/* options */)<br>
-]).process(YOUR_CSS);<br>
+gulp.task('css', () => gulp.src('./src/*.css').pipe(
+  postcss([
+    postcssPresetEnv(/* options */)
+  ])
+).pipe(
+  gulp.dest('.')
+));
+</pre>				</div>
 
-					</div>
+<span class="subheader">
+	Configure your postcss.config.js
+
+	<div class="npminstall">
+		<pre>
+			postcss.config.js
+		</pre>
+	</div>
+</span>
 				</p>
 
 			</span>
@@ -215,13 +258,18 @@ postcss([<br>
 
 	</div>
 </section>
+</main>
 <script>
-var header = document.querySelector('.ppe-heading');
-var defaultHeight = header.offsetHeight;
-window.addEventListener("scroll", ()=>{ header.offsetHeight <= window.pageYOffset ? header.style.height = "40px": header.style.height = defaultHeight + "px"})
-	
-		
+let switchers = document.querySelectorAll('.switcher');
 
+for (let item of switchers) {
+	item.addEventListener("click", (e) => {
+		e.target.classList.toggle('switcher-active');
+		for (let item of switchers) {
+			if(item != e.target) item.classList.remove('switcher-active')
+		}	
+	})
+}
 </script>
 <script src="/highlight.pack.js"> </script>
 <script>hljs.initHighlightingOnLoad();</script>
