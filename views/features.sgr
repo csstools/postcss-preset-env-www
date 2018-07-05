@@ -1,0 +1,34 @@
+extends(src='_layout.sgr')
+  block(name='content')
+    nav
+      a(href='/') postcss-preset-env
+      a(href='/features' active) features
+      a(href='/playground') playground
+      a(href='/support') support
+      a(href='/npm') npm
+      a(href='/github') github
+    nav
+      select
+        each(loop='item in [1,2,3,4,5]')
+          option(value='{{ item }}') {{ item }}
+      div
+        each(loop='item in [1,2,3,4]')
+          a(href='#{{ item }}') {{ item }}
+      div
+        each(loop='item in [1,2,3,4]')
+          a(href='#{{ item }}') :{{ item }}
+      div
+        each(loop='item in [1,2,3,4]')
+          a(href='#{{ item }}') {{ item }}()
+      div
+        a(href='#install') install
+        a(href='#options') options
+        a(href='#stages') stages
+    content
+      div
+        a(href='#title1') title1
+        a(href='') stage
+        a(href='') spec
+        a(href='') plugin
+        span subtitle
+        code p { color: gray(50); }

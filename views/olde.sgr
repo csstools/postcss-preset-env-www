@@ -1,0 +1,1518 @@
+doctype html
+title cssdb
+meta(charset='utf-8')
+meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
+meta(http-equiv='x-ua-compatible', content='ie=edge')
+meta(name='twitter:card', content='summary_large_image')
+meta(name='twitter:site', content='@jon_neal')
+meta(name='twitter:title', content='CSS Database')
+meta(name='twitter:description', content='A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.')
+meta(name='twitter:image', content='https://jonathantneal.github.io/cssdb/cssdb.jpg')
+meta(property='og:image', content='https://jonathantneal.github.io/cssdb/cssdb.jpg', itemprop='thumbnailUrl')
+meta(property='og:title', content='CSS Database')
+meta(property='og:url', content='https://jonathantneal.github.io/cssdb')
+meta(property='og:site_name', content='GitHub')
+meta(property='og:description', content='A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.')
+link(href='cssdb.ico', rel='shortcut icon')
+link(href='style.css', rel='stylesheet')
+header.cssdb-header
+  img.cssdb-header-branding(src='cssdb.svg', alt='cssdb logo', width='90', height='90')
+  .cssdb-header-heading
+    h1.cssdb-header-title
+      | What’s next for CSS?
+    p.cssdb-header-description
+      strong cssdb
+      |  is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
+  a.cssdb-header-link(href='#staging-process') What are the stages?
+main#features.cssdb-features
+  section#all-property.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#all-property')
+            code all
+            |  Property
+        p.cssdb-feature-description
+          | A property for defining the reset of all properties of an element
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-cascade-3/#all-shorthand') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/all-property.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/all-property.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-all', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 27
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 24
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 9.3
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 4
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+          span.cssdb-browser-version 1.2
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+          span.cssdb-browser-version 7.12
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/maximkoretskiy/postcss-initial') PostCSS Plugin
+  section#break-properties.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#break-properties') Break Properties
+        p.cssdb-feature-description
+          | Properties for defining the break behavior between and within boxes
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-break-3/#breaking-controls') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/break-properties.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/break-properties.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#multicolumn', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+          span.cssdb-browser-version 12
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 50
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 12
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+          span.cssdb-browser-version all
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 12
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 5
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/shrpne/postcss-page-break') PostCSS Plugin
+  section#custom-properties.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#custom-properties') Custom Properties
+        p.cssdb-feature-description
+          | A syntax for defining custom values accepted by all CSS properties
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-variables-1/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/custom-properties.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/custom-properties.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-variables', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+          span.cssdb-browser-version 16
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 31
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 49
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 36
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 9.3
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 5
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-custom-properties') PostCSS Plugin
+  section#font-variant-property.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#font-variant-property')
+            code font-variant
+            |  Property
+        p.cssdb-feature-description
+          | A property for defining the usage of alternate glyphs in a font
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-fonts-3/#propdef-font-variant') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/font-variant-property.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/font-variant-property.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#font-variant-alternates', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 34
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 9.3
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-font-variant') PostCSS Plugin
+  section#gap-properties.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#gap-properties') Gap Properties
+        p.cssdb-feature-description
+          | Properties for defining gutters within a layout
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-grid-1/#gutters') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/gap-properties.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/gap-properties.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+        \n
+      a.cssdb-feature-caniuse(href='https://caniuse.com/', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+          span.cssdb-browser-version 16
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 61
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 11.2
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-gap-properties') PostCSS Plugin
+  section#grid-layout.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#grid-layout') Grid Layout
+        p.cssdb-feature-description
+          | A syntax for using a grid concept to lay out content
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-grid-1/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/grid-layout.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/grid-layout.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-grid', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+          span.cssdb-browser-version 16
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 52
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 11
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 44
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 10.3
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 6.2
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/autoprefixer') PostCSS Plugin
+  section#media-query-ranges.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-4.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#media-query-ranges') Media Query Ranges
+        p.cssdb-feature-description
+          | A syntax for defining media query ranges using ordinary comparison operators
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/mediaqueries-4/#range-context') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/media-query-ranges.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/media-query-ranges.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+        \n
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-media-minmax') PostCSS Plugin
+  section#any-link-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#any-link-pseudo-class')
+            code :any-link
+            |  Hyperlink Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching anchor elements independent of whether they have been visited
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors4/#any-link-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/any-link-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/any-link-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-any-link', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 21
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 24
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 7
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 15
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 8
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 5
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+          span.cssdb-browser-version 1.2
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+          span.cssdb-browser-version 7.12
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-pseudo-class-any-link') PostCSS Plugin
+  section#case-insensitive-attributes.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#case-insensitive-attributes') Case-Insensitive Attributes
+        p.cssdb-feature-description
+          | An attribute selector matching attribute values case-insensitively
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors4/#attribute-case') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/case-insensitive-attributes.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/case-insensitive-attributes.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-case-insensitive', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 47
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 49
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 9
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 36
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 9
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 5
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/Semigradsky/postcss-attribute-case-insensitive') PostCSS Plugin
+  section#color-mod-function.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#color-mod-function')
+            code color-mod()
+            |  Function
+        p.cssdb-feature-description
+          | A function for modifying colors
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#funcdef-color-mod') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/color-mod-function.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/color-mod-function.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-color-mod-function') PostCSS Plugin
+  section#dir-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#dir-pseudo-class')
+            code :dir
+            |  Directionality Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching elements based on their directionality
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors4/#dir-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/dir-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/dir-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+        \n
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-dir-pseudo', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 17
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-dir-pseudo-class') PostCSS Plugin
+  section#focus-visible-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#focus-visible-pseudo-class')
+            code :focus-visible
+            |  Focus-Indicated Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching focused elements that indicate that focus to a user
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors-4/#focus-visible-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/focus-visible-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/focus-visible-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-focus-visible', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 4
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/WICG/focus-visible') JavaScript Library
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-focus-visible') PostCSS Plugin
+  section#focus-within-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#focus-within-pseudo-class')
+            code :focus-within
+            |  Focus Container Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching elements that are either focused or that have focused descendants
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors-4/#focus-within-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/focus-within-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/focus-within-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-focus-within', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 52
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 60
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 11
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 47
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 10.3
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/focus-within') JavaScript Library
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-focus-within') PostCSS Plugin
+  section#gray-function.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#gray-function')
+            code gray()
+            |  Function
+        p.cssdb-feature-description
+          | A function for specifying fully desaturated colors
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#funcdef-gray') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/gray-function.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/gray-function.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-color-gray') PostCSS Plugin
+  section#has-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#has-pseudo-class')
+            code :has()
+            |  Relational Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching ancestor and sibling elements
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors-4/#has-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/has-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/has-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+  section#hexadecimal-alpha-notation.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#hexadecimal-alpha-notation') Hexadecimal Alpha Notation
+        p.cssdb-feature-description
+          | A 4 & 8 character hex color notation for specifying the opacity level
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#hex-notation') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/hexadecimal-alpha-notation.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/hexadecimal-alpha-notation.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-rrggbbaa', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 49
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-color-hex-alpha') PostCSS Plugin
+            section#hwb-function.cssdb-feature
+              header.cssdb-feature-header
+                img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+                .cssdb-feature-header-content
+                  h3.cssdb-feature-heading
+                    a(href='#hwb-function')
+                      code hwb()
+                      |  Function
+                  p.cssdb-feature-description
+                    | A function for specifying colors by hue and then a degree of whiteness and blackness to mix into it
+              .cssdb-feature-content
+                p.cssdb-feature-specification
+                  a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#funcdef-hwb') Specification
+                  a.cssdb-feature-specification-badge-link(href='badge/hwb-function.svg', tabindex='-1')
+                    img.cssdb-feature-specification-badge(src='badge/hwb-function.svg', alt='cssdb badge')
+                pre.cssdb-feature-example.
+                .cssdb-feature-polyfills
+                  | Use with a
+                  ul.cssdb-feature-polyfill-list
+                    li.cssdb-feature-polyfill-item
+                      a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-color-hwb') PostCSS Plugin
+  section#image-set-function.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#image-set-function')
+            code image-set()
+            |  Function
+        p.cssdb-feature-description
+          | A function for specifying image sources based on the user’s resolution
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-images-4/#image-set-notation') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/image-set-function.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/image-set-function.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-image-set', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 21
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 6
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 15
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 8
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 4
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+          span.cssdb-browser-version 1.2
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+          span.cssdb-browser-version 7.12
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-image-set-function') PostCSS Plugin
+  section#lab-function.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#lab-function')
+            code lab()
+            |  Function
+        p.cssdb-feature-description
+          | A function for specifying colors expressed in the CIE Lab color space
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#funcdef-lab') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/lab-function.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/lab-function.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+  section#lch-function.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#lch-function')
+            code lch()
+            |  Function
+        p.cssdb-feature-description
+          | A function for specifying colors expressed in the CIE Lab color space with chroma and hue
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#funcdef-lch') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/lch-function.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/lch-function.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+  section#logical-properties-and-values.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#logical-properties-and-values') Logical Properties and Values
+        p.cssdb-feature-description
+          | Flow-relative (left-to-right or right-to-left) properties and values
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-logical/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/logical-properties-and-values.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/logical-properties-and-values.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-logical-props', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 41
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-logical-properties') PostCSS Plugin
+  section#matches-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#matches-pseudo-class')
+            code :matches()
+            |  Matches-Any Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching elements in a selector list
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors4/#matches-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/matches-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/matches-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-matches-pseudo', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 9
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 9
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-selector-matches') PostCSS Plugin
+  section#not-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#not-pseudo-class')
+            code :not()
+            |  Negation Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for ignoring elements in a selector list
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors4/#negation-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/not-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/not-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-not-sel-list', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 9
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 9
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-selector-not') PostCSS Plugin
+  section#overflow-wrap-property.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#overflow-wrap-property')
+            code overflow-wrap
+            |  Property
+        p.cssdb-feature-description
+          | A property for defining whether to insert line breaks within words to prevent overflowing
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-text-3/#overflow-wrap-property') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/overflow-wrap-property.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/overflow-wrap-property.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#wordwrap', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+          span.cssdb-browser-version 18
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 49
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 23
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 7
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 15
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 8
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+          span.cssdb-browser-version 10
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 4
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+          span.cssdb-browser-version 1.2
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+          span.cssdb-browser-version 7.12
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/mattdimu/postcss-replace-overflow-wrap') PostCSS Plugin
+  section#rebeccapurple-color.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#rebeccapurple-color')
+            code rebeccapurple
+            |  Color
+        p.cssdb-feature-description
+          | A particularly lovely shade of purple in memory of Rebecca Alison Meyer
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/rebeccapurple-color.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/rebeccapurple-color.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-rebeccapurple', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+          span.cssdb-browser-version 12
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 33
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 38
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 7
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 25
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 8
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+          span.cssdb-browser-version 57
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 4
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+          span.cssdb-browser-version 7.12
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-color-rebeccapurple') PostCSS Plugin
+  section#something-pseudo-class.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#something-pseudo-class')
+            code :something()
+            |  Zero-Specificity Pseudo-Class
+        p.cssdb-feature-description
+          | A pseudo-class for matching elements in a selector list without contributing specificity
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/selectors-4/#something-pseudo') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/something-pseudo-class.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/something-pseudo-class.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+  section#system-ui-font-family.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-3.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#system-ui-font-family')
+            code system-ui
+            |  Font Family
+        p.cssdb-feature-description
+          | A generic font used to match the user’s interface
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://www.w3.org/TR/css-fonts-4/#system-ui-def') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/system-ui-font-family.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/system-ui-font-family.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#font-family-system-ui', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 56
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+          span.cssdb-browser-version 11
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+          span.cssdb-browser-version 43
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+          span.cssdb-browser-version 11
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+          span.cssdb-browser-version 62
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+          span.cssdb-browser-version 37
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+          span.cssdb-browser-version 66
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+          span.cssdb-browser-version 11.8
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+          span.cssdb-browser-version 6.2
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+          span.cssdb-browser-version 1.2
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/JLHwung/postcss-font-family-system-ui') PostCSS Plugin
+  section#color-functional-notation.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-2.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#color-functional-notation') Color Functional Notation
+        p.cssdb-feature-description
+          | A space and slash separated notation for specifying colors
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://drafts.csswg.org/css-color/#ref-for-funcdef-rgb%E2%91%A1%E2%91%A0') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/color-functional-notation.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/color-functional-notation.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-color-functional-notation') PostCSS Plugin
+  section#custom-media-queries.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-2.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#custom-media-queries') Custom Media Queries
+        p.cssdb-feature-description
+          | An at-rule for defining aliases that represent media queries
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://drafts.csswg.org/mediaqueries-5/#at-ruledef-custom-media') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/custom-media-queries.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/custom-media-queries.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+        \n
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-custom-media') PostCSS Plugin
+  section#custom-selectors.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-2.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#custom-selectors') Custom Selectors
+        p.cssdb-feature-description
+          | An at-rule for defining aliases that represent selectors
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://drafts.csswg.org/css-extensions/#custom-selectors') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/custom-selectors.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/custom-selectors.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+        \n
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/postcss/postcss-custom-selectors') PostCSS Plugin
+  section#overflow-property.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-2.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#overflow-property')
+            code overflow
+            |  Property
+        p.cssdb-feature-description
+          | A property for defining
+          code overflow-x
+          |  and
+          code overflow-y
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://drafts.csswg.org/css-overflow/#propdef-overflow') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/overflow-property.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/overflow-property.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 68
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 61
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-overflow-shorthand') PostCSS Plugin
+  section#place-properties.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-2.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#place-properties') Place Properties
+        p.cssdb-feature-description
+          | Properties for defining alignment within a layout
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://drafts.csswg.org/css-align-3/#place-items-property') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/place-properties.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/place-properties.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+          span.cssdb-browser-version 59
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+          span.cssdb-browser-version 45
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-place') PostCSS Plugin
+  section#environment-variables.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-1.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#environment-variables') Environment Variables
+        p.cssdb-feature-description
+          | A syntax for using custom values accepted by CSS globally
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://drafts.csswg.org/css-overflow/#propdef-overflow') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/environment-variables.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/environment-variables.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-env-function') PostCSS Plugin
+  section#nesting-rules.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-1.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#nesting-rules') Nesting Rules
+        p.cssdb-feature-description
+          | A syntax for nesting relative rules within rules
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://tabatkins.github.io/specs/css-nesting/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/nesting-rules.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/nesting-rules.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-nesting') PostCSS Plugin
+  section#when-else-rules.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-1.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#when-else-rules') When/Else Rules
+        p.cssdb-feature-description
+          | At-rules for specifying media queries and support queries in a single grammar
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://tabatkins.github.io/specs/css-when-else/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/when-else-rules.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/when-else-rules.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+        \n
+  section#aspect-ratio-property.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-0.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#aspect-ratio-property')
+            code aspect-ratio
+            |  Property
+        p.cssdb-feature-description
+          | A property for defining the aspect ratio of an element
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/aspect-ratio-property.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/aspect-ratio-property.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/tomhodgins/aspect-ratio-spec') JavaScript Library
+  section#element-queries.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-0.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#element-queries') Element Queries
+        p.cssdb-feature-description
+          | A syntax for container-style element queries
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://tomhodgins.github.io/element-queries-spec/element-queries.html') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/element-queries.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/element-queries.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/eqcss/eqcss') JavaScript Library
+  section#media-function.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-0.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#media-function')
+            code media()
+            |  Function
+        p.cssdb-feature-description
+          | A function for specifying media queries within values
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://jonathantneal.github.io/media-expressions-spec/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/media-function.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/media-function.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/jonathantneal/postcss-media-fn') PostCSS Plugin
+  section#custom-property-sets.cssdb-feature
+    header.cssdb-feature-header
+      img.cssdb-feature-stage(src='stage-X.svg', alt='', width='62', height='62')
+      .cssdb-feature-header-content
+        h3.cssdb-feature-heading
+          a(href='#custom-property-sets') Custom Property Sets
+        p.cssdb-feature-description
+          | A syntax for storing properties in named variables, referenceable in other style rules
+    .cssdb-feature-content
+      p.cssdb-feature-specification
+        a.cssdb-feature-specification-link(href='https://tabatkins.github.io/specs/css-apply-rule/') Specification
+        a.cssdb-feature-specification-badge-link(href='badge/custom-property-sets.svg', tabindex='-1')
+          img.cssdb-feature-specification-badge(src='badge/custom-property-sets.svg', alt='cssdb badge')
+      pre.cssdb-feature-example.
+      a.cssdb-feature-caniuse(href='https://caniuse.com/#css-apply-rule', target='_blank', aria-label='can i use browser support')
+        span.cssdb-browser.cssdb-browser--ie(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--edge(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--firefox(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--chrome(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--safari(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--opera(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ios_saf(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mini(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--android(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--bb(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--op_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_chr(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_ff(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--ie_mob(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_uc(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--samsung(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--and_qq(aria-hidden='true')
+        span.cssdb-browser.cssdb-browser--baidu(aria-hidden='true')
+      .cssdb-feature-polyfills
+        | Use with a
+        ul.cssdb-feature-polyfill-list
+          li.cssdb-feature-polyfill-item
+            a.cssdb-feature-polyfill-link(href='https://github.com/pascalduez/postcss-apply') PostCSS Plugin
+aside.cssdb-process
+  h2
+    a#staging-process(href='#staging-process') The Staging Process
+  p
+    | Staging processes allow developers to accomplish real things and get involved
+    | in the creation of standards, testing, feedback, and new use cases.
+  p This staging process reflects the real-life stability of new CSS features.
+  p
+    | You can read an
+    a(href='http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process') inside view of the CSSWG
+    |  to learn about the official
+    | (and unofficial) development stages of CSS specifications. In reality,
+    | specifications and browser implementations happen out of sync. For example,
+    | there are stable CSS features missing in all browsers, while other CSS features
+    | developed outside the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  have appeared in browsers behind flags. This is
+    | too ambiguous for the web development community, and a more accountable process
+    | is desired.
+  h3
+    a#stage-0(href='#stage-0') Stage 0: Aspirational
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-0.svg', align='left', width='90', height='90')
+  blockquote
+    p “This is my crazy idea.”
+  p
+    | An
+    strong Editor’s Draft
+    a(href='#what-is-a-champion') championed
+    |  by a non-
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  member. It should be
+    | considered highly unstable and subject to change.
+  hr
+  h3
+    a#stage-1(href='#stage-1') Stage 1: Enthusiastic
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-1.svg', align='left', width='90', height='90')
+  blockquote
+    p “This is a crazy idea.”
+  p
+    | An
+    strong Editor’s Draft
+    a(href='#what-is-a-champion') championed
+    |  by a
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  member. It should still be
+    | considered highly unstable and subject to change.
+  hr
+  h3
+    a#stage-2(href='#stage-2') Stage 2: Experimental
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-2.svg', align='left', width='90', height='90')
+  blockquote
+    p “This idea might not be crazy.”
+  p
+    | An
+    strong Editor’s Draft
+    a(href='#what-is-a-champion') hosted
+    |  by the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  or
+    a(href='https://www.w3.org/') W3C
+    | . It should still be
+    | considered highly unstable and subject to change.
+  hr
+  h3
+    a#stage-3(href='#stage-3') Stage 3: Allowable
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-3.svg', align='left', width='90', height='90')
+  blockquote
+    p “This idea is not crazy.”
+  p
+    | A
+    strong Working Draft
+    a(href='#what-is-a-champion') hosted
+    |  by the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  or
+    a(href='https://www.w3.org/') W3C
+    |  and requiring
+    | implementations to move forward. It should be considered stable and subject to
+    | little change. It is still subject to rejection as a standard.
+  hr
+  h3
+    a#stage-4(href='#stage-4') Stage 4: Embraced
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-4.svg', align='left', width='90', height='90')
+  blockquote
+    p “This idea is becoming part of the web.”
+  p
+    | A
+    strong Candidate Recommendation
+    a(href='#what-is-a-champion') hosted
+    |  by the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  or
+    a(href='https://www.w3.org/') W3C
+    |  and being
+    | implemented by at least 2
+    a(href='#recognized-browser-vendors') recognized browser vendors
+    | , possibly behind a flag.
+    | It should be considered stable and subject to little change. It will likely
+    | become a standard.
+  hr
+  h3
+    a#stage-5(href='#stage-5') Stage 5: Standardized
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-5.svg', align='left', width='90', height='90')
+  blockquote
+    p “This idea is part of the web.”
+  p
+    | A
+    strong Recommendation
+    a(href='#what-is-a-champion') hosted
+    |  by the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  or
+    a(href='https://www.w3.org/') W3C
+    |  and implemented by all
+    a(href='#recognized-browser-vendors') recognized browser vendors
+    | . It is a standard.
+  hr
+  h3
+    a#rejected(href='#rejected') Rejected
+  p
+    img(src='https://jonathantneal.github.io/cssdb/stage-X.svg', align='left', width='90', height='90')
+  blockquote
+    p “I had no idea what I was doing.”
+  p
+    | This is any specification that has been rejected or neglected by its editor, or
+    | formally rejected by the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    | .
+  hr
+  h2
+    a#terminology(href='#terminology') Terminology
+  h3
+    a#recognized-browser-vendors(href='#recognized-browser-vendors') Recognized Browser Vendors
+  p
+    | Recognized browser vendors include, in alphabetical order; Apple, Google,
+    | Microsoft, Mozilla, and Opera.
+  h3
+    a#what-is-a-champion(href='#what-is-a-champion') What is a champion?
+  p
+    | A champion is the person responsible for advocating a new feature to
+    | completion, performing the legwork necessary to ensure the concerns of
+    | interested parties are identified and incorporated into the proposal. Once the
+    a(href='https://wiki.csswg.org/spec') CSSWG
+    |  hosts the draft for a feature, its champion is recognized as the
+    | organization itself.
+p
+  | Want to contribute? Checkout the
+  a(href='https://github.com/jonathantneal/cssdb') cssdb on GitHub
+script.
+  document.addEventListener('click', function (event) {
+    var closestHash = event.target.closest('a[href^="#"]');
+    if (closestHash) {
+      var target = document.getElementById(closestHash.hash.slice(1));
+      var easing = function (t) {
+        return t * (2 - t);
+      };
+      if (target) {
+        event.preventDefault();
+        scrollTo(target, 300, easing, function () {
+          location.hash = closestHash.hash;
+        });
+      }
+    }
+  });
+  function scrollTo(target, duration, easing, callback) {
+    var start = window.pageYOffset;
+    var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+    var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+    var targetOffset = typeof target === 'number' ? target : target.offsetTop;
+    var targetOffsetToScroll = Math.round(documentHeight - targetOffset < windowHeight ? documentHeight - windowHeight : targetOffset);
+    scroll();
+    function scroll() {
+      var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+      var time = Math.min(1, ((now - startTime) / duration));
+      var timeFunction = easing(time);
+      window.scroll(0, Math.ceil((timeFunction * (targetOffsetToScroll - start)) + start));
+      if (window.pageYOffset !== targetOffsetToScroll) {
+        requestAnimationFrame(scroll);
+      } else {
+        callback();
+      }
+    }
+  }
