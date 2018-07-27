@@ -10,7 +10,8 @@
     "heading": {
       "/features": "Features",
       "/playground": "Try It Now",
-      "https://gitter.im/postcss": "Support"
+      "https://gitter.im/postcss": "Support",
+      "https://github.com/csstools/postcss-preset-env": "GitHub"
     },
     "sidebar": {
       "https://github.com/csstools/postcss-preset-env#usage": "Installation and Usage",

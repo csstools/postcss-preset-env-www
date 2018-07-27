@@ -64,7 +64,7 @@
 	}
 }
 
-@media (max-width: 639px) {
+@media (max-width: 750px) {
 	.ppe-heading-menu-link span {
 		clip: rect(0 0 0 0);
 		position: absolute;

@@ -149,6 +149,8 @@
 	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	-webkit-text-size-adjust: 100%;
+	--spacepurple: #414141;
+	--lightpurple: #6e6ac3
 }
 
 @media (max-width: 859px) {

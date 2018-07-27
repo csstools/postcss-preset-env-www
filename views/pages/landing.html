@@ -1,275 +1,268 @@
 <heading class="ppe-heading heading-not-fixed">
 	<h1 class="ppe-heading-title">
-		<a class="ppe-heading-title-link" href="/">${site.title}</a>
+	   <a class="ppe-heading-title-link" href="/">${site.title}</a>
 	</h1>
 	<nav class="ppe-heading-menu">
-		<ul class="ppe-heading-menu-list">
-			${Object.keys(site.links.heading).map(href => `<li class="ppe-heading-menu-item">
-				<a class="ppe-heading-menu-link" ${util.href(href, req)}>
-					${include(util.getSymbol(href))}
-					<span>${site.links.heading[href]}</span>
-				</a>
-			</li>`)}
-		</ul>
+	   <ul class="ppe-heading-menu-list">
+		  ${Object.keys(site.links.heading).map(href => `
+		  <li class="ppe-heading-menu-item">
+			 <a class="ppe-heading-menu-link" ${util.href(href, req)}>
+			 ${include(util.getSymbol(href))}
+			 <span>${site.links.heading[href]}</span>
+			 </a>
+		  </li>
+		  `)}
+	   </ul>
 	</nav>
-</heading>
-<main>
-<div class="hero">
-	<div class="hero__wrapper">
-		<div class="hero__title">
-			<span style="position: relative; bottom: 5px;">Start using</span>
-			<span class="interactive__wrapper">
+ </heading>
+ <main>
+	<div class="hero">
+	   <div class="hero__wrapper">
+		  <div class="hero__title">
+			 <span>Start using</span>
+			 <span class="interactive__wrapper">
 				<ul class="scrollingList">
-					<li class="item">:any-link pseudo-class</li>
-					<li class="item">environment variables</li>
-					<li class="item">:focus-visible</li>
-					<li class="item">:focus-within</li>
-					<li class="item">font-variant</li>
-					<li class="item">gap properties</li>
-					<li class="item">gray() function</li>
-					<li class="item">grid layout</li>
-					<li class="item">alpha hex colors</li>
-					<li class="item">hwb() function</li>
-					<li class="item">gap properties</li>
-					<li class="item">image-set() function </li>
-					<li class="item">lab() function</li>
-					<li class="item">lch() function</li>
-					<li class="item">logical properties</li>
-					<li class="item">:matches pseudo-class</li>
-					<li class="item">media query ranges</li>
-					<li class="item"> nesting rules </li>
-					<li class="item">grid layout</li>
-					<li class="item">alpha hex colors</li>
-					<li class="item">hwb() function</li>
-					<li class="item">modern css today</li>
+				   <li class="item">:any-link pseudo-class</li>
+				   <li class="item">environment variables</li>
+				   <li class="item">:focus-visible</li>
+				   <li class="item">:focus-within</li>
+				   <li class="item">font-variant</li>
+				   <li class="item">gap properties</li>
+				   <li class="item">gray() function</li>
+				   <li class="item">grid layout</li>
+				   <li class="item">alpha hex colors</li>
+				   <li class="item">hwb() function</li>
+				   <li class="item">gap properties</li>
+				   <li class="item">image-set() function </li>
+				   <li class="item">lab() function</li>
+				   <li class="item">lch() function</li>
+				   <li class="item">logical properties</li>
+				   <li class="item">:matches pseudo-class</li>
+				   <li class="item">media query ranges</li>
+				   <li class="item"> nesting rules </li>
+				   <li class="item">grid layout</li>
+				   <li class="item">alpha hex colors</li>
+				   <li class="item">hwb() function</li>
+				   <li class="item">modern css today</li>
 				</ul>
-
-			</span>
-
-
-		</div>
-
-
-		<div class="hero__content">
-
-			<div class="code">
+			 </span>
+		  </div>
+		  <div class="hero__content">
+			 <div class="code">
 				<div class="code__title">
-					Modern CSS
+				   Modern CSS
 				</div>
-				<pre><code class="css">@custom-media --viewport-medium (width <= 50rem);
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
-
-:root {
-  --mainColor: #12345678;
-}
-
-body {
-  color: var(--mainColor);
-  font-family: system-ui;
-  overflow-wrap: break-word;
-}
-
-:--heading {
-  background-image: image-set(url(img/heading.png) 1x, url(img/heading@2x.png) 2x);
-}									</code></pre>
-			</div>
-
-			<div class="code ">
+				<pre><code class="language-css">@custom-media --viewport-medium (width <= 50rem);
+ @custom-selector :--heading h1, h2, h3, h4, h5, h6;
+ 
+ :root {
+   --mainColor: #12345678;
+ }
+ 
+ body {
+   color: var(--mainColor);
+   font-family: system-ui;
+   overflow-wrap: break-word;
+ }
+ 
+ :--heading {
+   background-image: image-set(url(img/heading.png) 1x, url(img/heading@2x.png) 2x);
+ }									</code></pre>
+			 </div>
+			 <div class="code ">
 				<div class="code__title">
-					Becomes..
+				   Becomes..
 				</div>
-				<pre><code class="css">
-:root {
-  --mainColor: rgba(18, 52, 86, 0.47059);
-}
-
-body {
-  color: rgba(18, 52, 86, 0.47059);
-  color: var(--mainColor);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
-  word-wrap: break-word;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  background-image: url(img/heading.png);
-}				
-					</code></pre>
-			</div>
-
-		</div>
-
+				<pre><code class="language-css">
+ :root {
+   --mainColor: rgba(18, 52, 86, 0.47059);
+ }
+ 
+ body {
+   color: rgba(18, 52, 86, 0.47059);
+   color: var(--mainColor);
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
+   word-wrap: break-word;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   background-image: url(img/heading.png);
+ }				
+					 </code></pre>
+			 </div>
+		  </div>
+	   </div>
 	</div>
-</div>
-<section class="subhero">
-	<div class="section__container">
-
-
-		<div class="section__content">
-			<span class="section__title section__title-subheader">
-				Getting started
-				<br>
-			</span>
-			<div class="switcher__container">
-					<div class="switcher switcher-active">
-						Gulp
-					</div>
-
-					<div class="switcher">
-						Webpack
-					</div>
-					<div class="switcher">
-						Grunt
-					</div>
-
-					<div class="switcher">
-						CLI
-					</div>
-			</div>
-			<span class="section__text">
-
-				<p class="subhero__content">
-					Add Gulp PostCSS to your build tool:
-
-					<div class="npminstall">npm install gulp-postcss --save-dev</div>
-
-
-					<span class="subheader">
-						Use PostCSS Preset Env in your Gulpfile:
-					</span>
-					<div class="npminstall">
-<pre>
-import postcss from 'gulp-postcss';
-import postcssPresetEnv from 'postcss-preset-env';
-
-gulp.task('css', () => gulp.src('./src/*.css').pipe(
-  postcss([
-    postcssPresetEnv(/* options */)
-  ])
-).pipe(
-  gulp.dest('.')
-));
-</pre>				</div>
-
-<span class="subheader">
-	Configure your postcss.config.js
-
-	<div class="npminstall">
-		<pre>
-			postcss.config.js
-		</pre>
-	</div>
-</span>
-				</p>
-
-			</span>
-		</div>
-
-
-
-
-	</div>
-</section>
-
-
-
-<section>
-	<div class="section__container">
-
-		<div class="section__illustration">
-
-			<img draggable="false" src="./images/1.svg">
-		</div>
-		<div class="section__content">
-			<span class="section__title section__title-default">
-				Tommorow’s CSS features are already available. Start using them today
-				<br>
-			</span>
-			<span class="section__text">
+	<section class="subhero">
+	   <div class="section__container">
+		  <div class="section__content-wide">
+			 <span class="section__title section__title-subheader">
+			 Getting started
+			 <br>
+			 </span>
+			 <div class="switcher__container">
+				<div class="switcher switcher-active" data-bundler="gulp">
+				   Gulp
+				</div>
+				<div class="switcher" data-bundler="webpack">
+				   Webpack
+				</div>
+				<div class="switcher" data-bundler="cli">
+				   CLI
+				</div>
+			 </div>
+			 <div class="step-section-wide" data-bundler="gulp">
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">1</span> Install gulp-postcss and postcss-preset-env	
+					  <pre><code class="language-node" style="font-size:13px;max-width:400px;width:100%">npm install gulp-postcss --save-dev
+ npm install postcss-preset-env --save-dev</code></pre>
+				   </div>
+				   <div class="section__step">
+					  <span class="step">2</span> Use PostCSS Preset Env in your Gulpfile:
+					  <div>
+						 <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">import postcss from 'gulp-postcss';
+ import postcssPresetEnv from 'postcss-preset-env';		
+ postcss([
+	 postcssPresetEnv(/* options */)
+ ]).process(YOUR_CSS);</code></pre>
+					  </div>
+				   </div>
+				</div>
+				<div class="section__step">
+				   <span class="step">3</span> Create postcss.config.js and add PostCSS Preset Env
+				   <div>
+					  <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">{
+   "postcss": {
+	 "parser": "sugarss",
+	 "map": false,
+	 "from": "/path/to/src.sss",
+	 "to": "/path/to/dest.css",
+	 "plugins": {
+	   "postcss-preset-env": {}
+	 }
+   }
+ }</code></pre>
+				   </div>
+				</div>
+			 </div>
+			 <div class="step-section-wide" data-bundler="webpack" style="display: none">
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">1</span> Install webpack and postcss-preset-env	
+					  <pre><code class="language-node" style="font-size:13px;max-width:400px;width:100%">npm install postcss-loader --save-dev</code></pre>
+				   </div>
+				   <div class="section__step">
+					  <span class="step">2</span> Use PostCSS Preset Env in your Gulpfile:
+					  <div>
+						 <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">import postcssPresetEnv from 'postcss-preset-env';
+ export default {
+   module: {
+	 rules: [
+	   {
+		 test: /\.css$/,
+		 use: [
+		   'style-loader',
+		   { loader: 'css-loader', options: { importLoaders: 1 } },
+		   { loader: 'postcss-loader', options: {
+			 ident: 'postcss',
+			 plugins: () => [
+			   postcssPresetEnv(/* options */)
+			 ]
+		   } }
+		 ]
+	   }
+	 ]
+   }
+ };</code></pre>
+					  </div>
+				   </div>
+				</div>
+				<div class="section__step">
+				   <span class="step">3</span> Create postcss.config.js and add PostCSS Preset Env
+				   <div>
+					  <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">{
+ "postcss": {
+ "parser": "sugarss",
+ "map": false,
+ "from": "/path/to/src.sss",
+ "to": "/path/to/dest.css",
+ "plugins": {
+   "postcss-preset-env": {}
+ }
+ }
+ }</code></pre>
+				   </div>
+				</div>
+			 </div>
+			 <div class="step-section-wide" data-bundler="cli" style="display:none">
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">1</span> Install postcss-preset-env	
+					  <pre><code class="language-node" style="font-size:13px;max-width:400px;width:100%">npm install postcss-preset-env --save-dev</code></pre>
+				   </div>
+				</div>
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">2</span> Use PostCSS Preset Env in your Gulpfile:
+					  <div>
+						 <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">import postcssPresetEnv from 'postcss-preset-env';
+ postcssPresetEnv.process(YOUR_CSS);</code></pre>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	   </div>
+	</section>
+	<section style="margin-top: 50px">
+	   <div class="section__container">
+		  <div class="section__illustration">
+			 <img draggable="false" src="./images/1.svg">
+		  </div>
+		  <div class="section__content">
+			 <span class="section__title section__title-default">
+			 Tommorow’s CSS features are already available. Start using them today
+			 </span>
+			 <p class="section__text">
 				With postcss-preset-env you can use last CSS features such as alpha hex colors, break properties and other modern css functions.
 				Check out
-				<a class="link__default" href="#">Full features list</a>
-			</span>
-		</div>
-
-
-
-
-	</div>
-</section>
-
-
-
-<section>
-	<div class="section__container">
-			<div class="section__content">
-			<span class="section__title section__title-default">
-				Select stage of CSS specs
-				<br>
-			</span>
-			<span class="section__text">
-				You can select which stage of CSS specification you want to use
-				Or if you won't configurate anythingPostCSS Preset Env enables Stage 2 features and supports all browsers.
-			</span>
-		</div>
-			<div class="section__illustration">
-					<img draggable="false" src="./images/shapes.svg">
-				</div>
-		
-		
-
-	
-
-
-
-	</div>
-</section>
-
-
-
-
-
-
-
-
-<section>
-	<div class="section__container">
-
-
-
-		<div class="section__illustration">
-			<img draggable="false" src="./images/2.svg">
-		</div>
-
-
-		<div class="section__content">
-			<span class="section__title section__title-default">
-				Integration with most popular bundlers and taskrunners
-				<br>
-			</span>
-			<span class="section__text">
+				<a class="link__default" href="./features">Full features list</a>
+			 </p>
+		  </div>
+	   </div>
+	</section>
+	<section>
+	   <div class="section__container">
+		  <div class="section__content">
+			 <span class="section__title section__title-default">
+			 Select stage of CSS specs
+			 </span>
+			 <p class="section__text">
+				You can select which stage of CSS specification you want to use Or if you won't configurate anythingPostCSS Preset Env enables
+				Stage 2 features and supports all browsers.
+			 </p>
+		  </div>
+		  <div class="section__illustration">
+			 <img draggable="false" src="./images/shapes.svg">
+		  </div>
+	   </div>
+	</section>
+	<section>
+	   <div class="section__container">
+		  <div class="section__illustration">
+			 <img draggable="false" src="./images/2.svg">
+		  </div>
+		  <div class="section__content">
+			 <span class="section__title section__title-default">
+			 Integration with most popular bundlers and taskrunners
+			 </span>
+			 <p class="section__text">
 				postcss-preset-env is compatible with most bundlers and taskrunners, such as webpack, gulp and grunt
-			</span>
-		</div>	
-	</div>
-</section>
-
-<section class="footer">
-	<div class="section__container">
-
-	</div>
-</section>
-</main>
-<script>
-let switchers = document.querySelectorAll('.switcher');
-
-for (let item of switchers) {
-	item.addEventListener("click", (e) => {
-		e.target.classList.toggle('switcher-active');
-		for (let item of switchers) {
-			if(item != e.target) item.classList.remove('switcher-active')
-		}	
-	})
-}
-</script>
-<script src="/highlight.pack.js"> </script>
-<script>hljs.initHighlightingOnLoad();</script>
+			 </p>
+		  </div>
+	   </div>
+	</section>
+ </main>
+ <script src="/landing.min.js"> </script>
