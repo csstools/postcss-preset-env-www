@@ -189,6 +189,7 @@
 	border-radius: 3px;
 	color: #cdd3de;
 	padding: 15px 30px;
+	overflow-x: auto;
 }
 
 .css-atrule-name {
