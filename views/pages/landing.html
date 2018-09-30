@@ -1,18 +1,268 @@
-<header class="ppe-landing-header">
-	<h1 class="ppe-landing-title">${site.title}</h1>
-	<p class="ppe-landing-tag">${site.loc.taglineText}</p>
-	<nav class="ppe-landing-menu">
-		${Object.keys(site.links.landing).map(href => `<a class="ppe-landing-menu-link" ${util.href(href, req)}>
-			${include(util.getSymbol(href))}
-			<span>${site.links.landing[href]}</span>
-		</a>`)}
+<heading class="ppe-heading heading-not-fixed">
+	<h1 class="ppe-heading-title">
+	   <a class="ppe-heading-title-link" href="/">${site.title}</a>
+	</h1>
+	<nav class="ppe-heading-menu">
+	   <ul class="ppe-heading-menu-list">
+		  ${Object.keys(site.links.heading).map(href => `
+		  <li class="ppe-heading-menu-item">
+			 <a class="ppe-heading-menu-link" ${util.href(href, req)}>
+			 ${include(util.getSymbol(href))}
+			 <span>${site.links.heading[href]}</span>
+			 </a>
+		  </li>
+		  `)}
+	   </ul>
 	</nav>
-</header>
-<main>
-	<p class="ppe-landing-content">${site.loc.landingHtml}</p>
-	<p class="ppe-landing-action" aria-label="${site.loc.npmInstallPromptText} ${site.loc.npmInstallText}">
-		<span class="ppe-landing-clipboard">
-			<span class="ppe-landing-clipboard-text" id="clipboard" data-clipboard>${site.loc.npmInstallHtml}</span>
-		</span>
-	</p>
-</main>
+ </heading>
+ <main>
+	<div class="hero">
+	   <div class="hero__wrapper">
+		  <div class="hero__title">
+			 <span>Start using</span>
+			 <span class="interactive__wrapper">
+				<ul class="scrollingList">
+				   <li class="item">:any-link pseudo-class</li>
+				   <li class="item">environment variables</li>
+				   <li class="item">:focus-visible</li>
+				   <li class="item">:focus-within</li>
+				   <li class="item">font-variant</li>
+				   <li class="item">gap properties</li>
+				   <li class="item">gray() function</li>
+				   <li class="item">grid layout</li>
+				   <li class="item">alpha hex colors</li>
+				   <li class="item">hwb() function</li>
+				   <li class="item">gap properties</li>
+				   <li class="item">image-set() function </li>
+				   <li class="item">lab() function</li>
+				   <li class="item">lch() function</li>
+				   <li class="item">logical properties</li>
+				   <li class="item">:matches pseudo-class</li>
+				   <li class="item">media query ranges</li>
+				   <li class="item"> nesting rules </li>
+				   <li class="item">grid layout</li>
+				   <li class="item">alpha hex colors</li>
+				   <li class="item">hwb() function</li>
+				   <li class="item">modern css today</li>
+				</ul>
+			 </span>
+		  </div>
+		  <div class="hero__content">
+			 <div class="code">
+				<div class="code__title">
+				   Modern CSS
+				</div>
+				<pre><code class="language-css">@custom-media --viewport-medium (width <= 50rem);
+ @custom-selector :--heading h1, h2, h3, h4, h5, h6;
+ 
+ :root {
+   --mainColor: #12345678;
+ }
+ 
+ body {
+   color: var(--mainColor);
+   font-family: system-ui;
+   overflow-wrap: break-word;
+ }
+ 
+ :--heading {
+   background-image: image-set(url(img/heading.png) 1x, url(img/heading@2x.png) 2x);
+ }									</code></pre>
+			 </div>
+			 <div class="code ">
+				<div class="code__title">
+				   Becomes..
+				</div>
+				<pre><code class="language-css">
+ :root {
+   --mainColor: rgba(18, 52, 86, 0.47059);
+ }
+ 
+ body {
+   color: rgba(18, 52, 86, 0.47059);
+   color: var(--mainColor);
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
+   word-wrap: break-word;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   background-image: url(img/heading.png);
+ }				
+					 </code></pre>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+	<section class="subhero">
+	   <div class="section__container">
+		  <div class="section__content-wide">
+			 <span class="section__title section__title-subheader">
+			 Getting started
+			 <br>
+			 </span>
+			 <div class="switcher__container">
+				<div class="switcher switcher-active" data-bundler="gulp">
+				   Gulp
+				</div>
+				<div class="switcher" data-bundler="webpack">
+				   Webpack
+				</div>
+				<div class="switcher" data-bundler="cli">
+				   CLI
+				</div>
+			 </div>
+			 <div class="step-section-wide" data-bundler="gulp">
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">1</span> Install gulp-postcss and postcss-preset-env	
+					  <pre><code class="language-node" style="font-size:13px;max-width:400px;width:100%">npm install gulp-postcss --save-dev
+ npm install postcss-preset-env --save-dev</code></pre>
+				   </div>
+				   <div class="section__step">
+					  <span class="step">2</span> Use PostCSS Preset Env in your Gulpfile:
+					  <div>
+						 <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">import postcss from 'gulp-postcss';
+ import postcssPresetEnv from 'postcss-preset-env';		
+ postcss([
+	 postcssPresetEnv(/* options */)
+ ]).process(YOUR_CSS);</code></pre>
+					  </div>
+				   </div>
+				</div>
+				<div class="section__step">
+				   <span class="step">3</span> Create postcss.config.js and add PostCSS Preset Env
+				   <div>
+					  <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">{
+   "postcss": {
+	 "parser": "sugarss",
+	 "map": false,
+	 "from": "/path/to/src.sss",
+	 "to": "/path/to/dest.css",
+	 "plugins": {
+	   "postcss-preset-env": {}
+	 }
+   }
+ }</code></pre>
+				   </div>
+				</div>
+			 </div>
+			 <div class="step-section-wide" data-bundler="webpack" style="display: none">
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">1</span> Install webpack and postcss-preset-env	
+					  <pre><code class="language-node" style="font-size:13px;max-width:400px;width:100%">npm install postcss-loader --save-dev</code></pre>
+				   </div>
+				   <div class="section__step">
+					  <span class="step">2</span> Use PostCSS Preset Env in your Gulpfile:
+					  <div>
+						 <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">import postcssPresetEnv from 'postcss-preset-env';
+ export default {
+   module: {
+	 rules: [
+	   {
+		 test: /\.css$/,
+		 use: [
+		   'style-loader',
+		   { loader: 'css-loader', options: { importLoaders: 1 } },
+		   { loader: 'postcss-loader', options: {
+			 ident: 'postcss',
+			 plugins: () => [
+			   postcssPresetEnv(/* options */)
+			 ]
+		   } }
+		 ]
+	   }
+	 ]
+   }
+ };</code></pre>
+					  </div>
+				   </div>
+				</div>
+				<div class="section__step">
+				   <span class="step">3</span> Create postcss.config.js and add PostCSS Preset Env
+				   <div>
+					  <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">{
+ "postcss": {
+ "parser": "sugarss",
+ "map": false,
+ "from": "/path/to/src.sss",
+ "to": "/path/to/dest.css",
+ "plugins": {
+   "postcss-preset-env": {}
+ }
+ }
+ }</code></pre>
+				   </div>
+				</div>
+			 </div>
+			 <div class="step-section-wide" data-bundler="cli" style="display:none">
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">1</span> Install postcss-preset-env	
+					  <pre><code class="language-node" style="font-size:13px;max-width:400px;width:100%">npm install postcss-preset-env --save-dev</code></pre>
+				   </div>
+				</div>
+				<div class="step__column">
+				   <div class="section__step">
+					  <span class="step">2</span> Use PostCSS Preset Env in your Gulpfile:
+					  <div>
+						 <pre><code class="language-js" style="font-size:13px;max-width:400px;width:100%">import postcssPresetEnv from 'postcss-preset-env';
+ postcssPresetEnv.process(YOUR_CSS);</code></pre>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	   </div>
+	</section>
+	<section style="margin-top: 50px">
+	   <div class="section__container">
+		  <div class="section__illustration">
+			 <img draggable="false" src="./images/1.svg">
+		  </div>
+		  <div class="section__content">
+			 <span class="section__title section__title-default">
+			 Tommorow’s CSS features are already available. Start using them today
+			 </span>
+			 <p class="section__text">
+				With postcss-preset-env you can use last CSS features such as alpha hex colors, break properties and other modern css functions.
+				Check out
+				<a class="link__default" href="./features">Full features list</a>
+			 </p>
+		  </div>
+	   </div>
+	</section>
+	<section>
+	   <div class="section__container">
+		  <div class="section__content">
+			 <span class="section__title section__title-default">
+			 Select stage of CSS specs
+			 </span>
+			 <p class="section__text">
+				You can select which stage of CSS specification you want to use Or if you won't configurate anythingPostCSS Preset Env enables
+				Stage 2 features and supports all browsers.
+			 </p>
+		  </div>
+		  <div class="section__illustration">
+			 <img draggable="false" src="./images/shapes.svg">
+		  </div>
+	   </div>
+	</section>
+	<section>
+	   <div class="section__container">
+		  <div class="section__illustration">
+			 <img draggable="false" src="./images/2.svg">
+		  </div>
+		  <div class="section__content">
+			 <span class="section__title section__title-default">
+			 Integration with most popular bundlers and taskrunners
+			 </span>
+			 <p class="section__text">
+				postcss-preset-env is compatible with most bundlers and taskrunners, such as webpack, gulp and grunt
+			 </p>
+		  </div>
+	   </div>
+	</section>
+ </main>
+ <script src="/landing.min.js"> </script>
