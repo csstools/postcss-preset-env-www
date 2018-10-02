@@ -17,6 +17,7 @@ const replacements = {
 
 const omissions = [
 	'custom-property-sets',
+	'grid-layout',
 	'has-pseudo-class',
 	'something-pseudo-class',
 	'when-else-rules'

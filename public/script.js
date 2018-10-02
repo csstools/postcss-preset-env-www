@@ -1,6 +1,6 @@
 function onParsed() {
-	onHashChange();
 	initFeatureNav();
+	onHashChange();
 	onCopyClipboard();
 }
 
@@ -15,6 +15,7 @@ window.addEventListener('hashchange', onHashChange);
 const hashElements = [];
 const omittedElements = [];
 const stages = [0, 1, 2, 3];
+let stageSelect = null;
 
 function onCopyClipboard() {
 	Array.prototype.forEach.call(
@@ -59,13 +60,21 @@ function onHashChange() {
 	hashElements.forEach(element => {
 		element.setAttribute('aria-current', 'page');
 	});
+
+	const stageRegExp = /^#stage-([0-4])$/;
+
+	if (stageRegExp.test(location.hash)) {
+		const stageNumber = location.hash.match(stageRegExp)[1];
+
+		updateStage(stageNumber);
+	}
 }
 
 function initFeatureNav() {
 	const nav = document.querySelector('.ppe-navigation');
 
 	if (nav) {
-		const select = document.createElement('select');
+		const select = stageSelect = document.createElement('select');
 
 		select.className = 'ppe-navigation-select';
 
@@ -80,23 +89,7 @@ function initFeatureNav() {
 		});
 
 		select.addEventListener('change', () => {
-			omittedElements.forEach(element => {
-				element.hidden = false;
-			});
-			const omittedStages = stages.slice(0, stages.indexOf(Number(select.value)));
-			const selector = omittedStages.map(stage => `[data-stage="${stage}"]`).join(',')
-
-			omittedElements.splice(
-				0,
-				omittedElements.length,
-				...Array.prototype.slice.call(
-					selector ? document.querySelectorAll(selector) : []
-				)
-			);
-
-			omittedElements.forEach(element => {
-				element.hidden = true;
-			});
+			location.hash = `#stage-${select.value}`;
 		});
 
 		nav.insertBefore(select, nav.firstChild);
@@ -147,5 +140,29 @@ function scrollTo(target, duration, easing, callback) {
 
 			callback();
 		}
+	}
+}
+
+function updateStage(number) {
+	omittedElements.forEach(element => {
+		element.hidden = false;
+	});
+	const omittedStages = stages.slice(0, stages.indexOf(Number(number)));
+	const selector = omittedStages.map(stage => `[data-stage="${stage}"]`).join(',');
+
+	omittedElements.splice(
+		0,
+		omittedElements.length,
+		...Array.prototype.slice.call(
+			selector ? document.querySelectorAll(selector) : []
+		)
+	);
+
+	omittedElements.forEach(element => {
+		element.hidden = true;
+	});
+
+	if (stageSelect) {
+		stageSelect.value = number;
 	}
 }
