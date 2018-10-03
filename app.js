@@ -1,4 +1,4 @@
-const cssdb = require('cssdb');
+const cssdb = require('cssdb').filter(feature => feature.stage >= 0);
 const eslit = require('eslit');
 const express = require('express');
 const postcss = require('postcss');

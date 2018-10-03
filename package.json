@@ -18,13 +18,11 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "dependencies": {
-    "postcss": "^7.0.4"
-  },
   "devDependencies": {
     "cssdb": "^3.2.1",
     "eslit": "^5.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "postcss": "^7.0.5"
   },
   "eslintConfig": {
     "extends": "dev",
