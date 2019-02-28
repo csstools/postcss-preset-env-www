@@ -188,7 +188,23 @@
 	background-color: #282c34;
 	border-radius: 3px;
 	color: #cdd3de;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	overflow-x: hidden;
+	overflow-x: overlay;
 	padding: 15px 30px;
+}
+
+.ppe-feature-example:hover {
+  overflow-x: auto;
+  overflow-x: overlay;
+}
+
+@media (hover: none) {
+  .ppe-feature-example {
+    overflow-x: auto;
+    overflow-x: overlay;
+  }
 }
 
 .css-atrule-name {

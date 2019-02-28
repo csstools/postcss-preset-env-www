@@ -19,10 +19,10 @@
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "cssdb": "^3.2.1",
-    "eslit": "^5.0.0",
-    "express": "^4.16.3",
-    "postcss": "^7.0.5"
+    "cssdb": "^4.3.0",
+    "eslit": "^6.0.0",
+    "express": "^4.16.4",
+    "postcss": "^7.0.14"
   },
   "eslintConfig": {
     "extends": "dev",

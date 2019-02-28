@@ -36,7 +36,7 @@ const validPages = ['/features', '/playground'];
 
 module.exports = {
 	cssdbFilter(feature) {
-		return !omissions.includes(feature.id);
+		return !omissions.includes(feature.id) && Object(feature.polyfills).length;
 	},
 	getStageColor(stage) {
 		return stageColors[stage];
