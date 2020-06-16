@@ -1,0 +1,121 @@
+.ppe-landing-header {
+	align-items: center;
+	animation: rolling 30s ease infinite;
+	background-image: linear-gradient(238deg, #9952c8, #1874d5);
+	background-size: 300% 300%;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 60vh;
+	padding: 15px 15px var(--padding-bottom);
+	text-align: center;
+
+	@media (--sm) {
+		--padding-bottom: 15px;
+	}
+
+	@media (--md-up) {
+		--padding-bottom: 70px;
+	}
+
+	& h1 {
+		font-size: var(--font-size);
+		font-weight: 100;
+		margin: 0;
+
+		@media (--sm) {
+			--font-size: 175%;
+		}
+
+		@media (--md-up) {
+			--font-size: 300%;
+		}
+	}
+
+	& small {
+		font-size: var(--font-size);
+		font-weight: 300;
+		opacity: 0.7;
+
+		@media (--sm) {
+			--font-size: 75%;
+		}
+
+		@media (--md-up) {
+			--font-size: 100%;
+		}
+	}
+
+	& nav {
+		& ul {
+			display: grid;
+			grid-gap: 20px;
+			justify-content: center;
+			grid-template-columns: repeat(4, 1fr);
+			margin: 40px 0 0;
+
+			@media (max-width: 959px) {
+				grid-gap: 15px;
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		& a {
+			--bg-color: rgba(0, 0, 0, .2);
+			--fg-color: #ffffff;
+			--box-shadow-1: rgba(0, 0, 0, 0);
+			--box-shadow-2: rgba(0, 0, 0, 0);
+			--transform: scale(1);
+			--transition: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+			align-items: center;
+			background-color: var(--bg-color);
+			border-radius: 5px;
+			box-shadow: 0 20px 40px var(--box-shadow-1), 0 15px 12px var(--box-shadow-2);
+			color: var(--fg-color);
+			display: inline-flex;
+			flex-direction: column;
+			height: var(--size);
+			justify-content: center;
+			text-decoration: none;
+			transform: var(--transform);
+			transition: background-color .3s var(--transition), box-shadow .3s var(--transition), color 0s, transform .3s var(--transition);
+			width: var(--size);
+
+			@media (--md-dn) {
+				--size: 120px;
+			}
+
+			@media (--lg) {
+				--size: 180px;
+			}
+
+			&:hover, &:focus {
+				--bg-color: #ffffff;
+				--fg-color: #f527e0;
+				--box-shadow-1: rgba(0, 0, 0, .3);
+				--box-shadow-2: rgba(0, 0, 0, .22);
+				--transform: scale(1.1);
+			}
+		}
+
+		& svg {
+			fill: currentColor;
+			height: 65px;
+			width: 65px;
+		}
+
+		& span {
+			font-size: 14px;
+			font-weight: 400;
+			margin: 12px 0 0;
+		}
+	}
+}
+
+@keyframes rolling {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}

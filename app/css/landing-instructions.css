@@ -1,0 +1,56 @@
+.ppe-landing-instructions {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+
+	& pre {
+		align-items: center;
+		background-color: #2e2e2e;
+		border-radius: 5px;
+		border-width: 0;
+		color: #ffffff;
+		display: flex;
+		font: 700 var(--font-size)/1.5 var(--font-code);
+		margin: 30px;
+		padding: 10px var(--padding-horz);
+		text-align: center;
+		white-space: normal;
+
+		@media (--sm) {
+			--font-size: 100%;
+			--padding-horz: 15px;
+		}
+
+		@media (--md-up) {
+			--font-size: 125%;
+			--padding-horz: 20px;
+		}
+	}
+
+	& code {
+		font: inherit;
+	}
+
+	& span {
+		white-space: pre;
+	}
+
+	& button {
+		background-color: transparent;
+		border-width: 0;
+		color: inherit;
+		cursor: copy;
+		display: block;
+		font: inherit;
+		line-height: inherit;
+		height: 20px;
+		line-height: inherit;
+		margin: 0 -2.5px 0 5px;
+		padding: 2.5px;
+		width: 20px;
+	}
+
+	& svg {
+		display: block;
+	}
+}

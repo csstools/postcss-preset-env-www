@@ -1,0 +1,19 @@
+.ppe-landing-summary {
+	font-weight: 400;
+	margin: 50px auto 20px;
+	max-width: 37em;
+	padding: 0 1em;
+	text-align: center;
+
+	& a {
+		--shadow-color: transparent;
+
+		box-shadow: 0 1px 0 0 var(--shadow-color);
+		color: #0078d6;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			--shadow-color: currentColor;
+		}
+	}
+}
