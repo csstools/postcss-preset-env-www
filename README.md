@@ -1,3 +1,7 @@
+<div align="center">⚠️ PostCSS Preset Env's website was moved to <a href="https://github.com/csstools/postcss-plugins/tree/main/sites/postcss-preset-env">@csstools/postcss-plugins</a>. ⚠️ <br>
+<a href="https://github.com/csstools/postcss-plugins/discussions/75">Read the announcement</a></div>
+
+
 # postcss_preset_env
 
 The official website for [PostCSS Preset Env](https://github.com/csstools/postcss-preset-env)
